@@ -17,7 +17,6 @@
 
 .header-carousel-item {
     height: 70vh;
-    z-index: 2;
 }
 
 .bg-cover {
@@ -25,18 +24,29 @@
     background-position: center center;
 }
 
-.yellowWater {
-    border: 0;
-    background-image: url(https://i.imgur.com/FjnjBtN.png);
-    width: 100%;
-    height: 700px;
-    position: absolute;
-    top: 60vh;
-    z-index: 1;
+header {
+    position: relative;
 }
 
-#section01 {
-    height: 2000px;
+.up2 {
+    position: relative;
+    z-index: 2px;
+}
+
+.yellowWaterBack {
+    position: relative;
     width: 100%;
+    height: 500px;
+    background-color: #14213D;
     z-index: 0;
+}
+
+.yellowWater {
+    position: absolute;
+    background-image: url(https://i.imgur.com/KUjL8Uf.png?1);
+    width: 100%;
+    height: 416px;
+    background-position: center center;
+    bottom: 100px;
+    z-index: 1;
 }
