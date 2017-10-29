@@ -101,7 +101,11 @@ header {
 }
 
 .page02 {
-    margin-top: 360px
+    margin-top: 360px;
+}
+
+.page03 {
+    margin-top: 320px;
 }
 
 .fire {
@@ -110,6 +114,16 @@ header {
     top: 200px;
     width: 200px;
     transform: rotate(68deg);
+    /* border: 10px solid #000000; */
+    z-index: 1;
+}
+
+.rocket {
+    position: absolute;
+    left: 0px;
+    top: 1200px;
+    width: 400px;
+    transform: rotate(0deg);
     /* border: 10px solid #000000; */
     z-index: 1;
 }
@@ -136,6 +150,10 @@ header {
     background-image: url(https://i.imgur.com/JaQQ8sR.jpg);
 }
 
+.pic03 {
+    background-image: url(https://i.imgur.com/y80lg3q.jpg);
+}
+
 .num9487 {
     color: #14213D;
 }
@@ -146,4 +164,14 @@ header {
     width: 100%;
     top: 0px;
     /* border: 1px solid #000000; */
+}
+
+.word {
+    border: 1px solid #000000;
+}
+
+.whiteBox {
+    border: 1px solid #ffffff;
+    padding: 7px 30px 7px 30px;
+    margin: 5px 70px 0px 70px;
 }
