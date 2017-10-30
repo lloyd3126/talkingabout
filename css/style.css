@@ -81,7 +81,7 @@ header {
     position: relative;
     background-color: #14213D;
     width: 100%;
-    height: 2500px;
+    height: 3300px;
     z-index: 0;
 }
 
@@ -108,6 +108,11 @@ header {
     margin-top: 320px;
 }
 
+.page04 {
+    margin-top: 350px;
+    /* border: 1px solid #000000; */
+}
+
 .fire {
     position: absolute;
     right: 0px;
@@ -123,6 +128,16 @@ header {
     left: 0px;
     top: 1200px;
     width: 400px;
+    transform: rotate(0deg);
+    /* border: 10px solid #000000; */
+    z-index: 1;
+}
+
+.paint {
+    position: absolute;
+    right: 50px;
+    top: 1950px;
+    width: 450px;
     transform: rotate(0deg);
     /* border: 10px solid #000000; */
     z-index: 1;
@@ -174,4 +189,25 @@ header {
     border: 1px solid #ffffff;
     padding: 7px 30px 7px 30px;
     margin: 5px 70px 0px 70px;
+}
+
+.circleFix {
+    height: 150px;
+    width: 50px;
+    position: fixed;
+    right: 5%;
+    /* top: 50vh; */
+    top: 50%;
+    /* border: 1px solid #000000; */
+    z-index: 2;
+    margin-top: -75px;
+}
+
+.circle {
+    /* border: 1px solid #000000; */
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    background-color: #ffffff;
 }
