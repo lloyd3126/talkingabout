@@ -1,0 +1,87 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+* {
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+.colorB {
+    background-color: #14213D;
+}
+
+.colorY {
+    background-color: #FCA311;
+}
+
+.colorG {
+    background-color: #E5E5E5;
+}
+
+.colorW {
+    background-color: #fff;
+}
+
+.Black {
+    background-color: #000000;
+}
+
+.LogoBar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+ul {
+    list-style-type: none;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    border-radius: 15px;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 12px 8px;
+    visibility: visible;
+}
+
+li {
+    border-radius: 50%;
+    background-color: #E5E5E5;
+    width: 15px;
+    height: 15px;
+    margin: 7px 0px;
+}
+
+.section {
+    font-size: 0px;
+}
+
+.slideBox {
+    position: relative;
+    width: auto;
+    height: 100%;
+}
+
+.left {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.right {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+}
+
+.list {
+    width: 0%;
+    height: 100%;
+    display: inline-block;
+}
+
+.backBtn {
+    width: 0%;
+    height: 100%;
+    display: inline-block;
+}

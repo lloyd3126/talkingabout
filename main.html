@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="zh-Hang-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>偷聽兒報 Talking About</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="./css/main_style.css">
+
+
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark LogoBar">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="https://i.imgur.com/g0tSu1J.png" width="auto" height="30" class="d-inline-block align-top" alt=""> 偷聽兒報 Talking About
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                                             <span class="navbar-toggler-icon"></span>
+                                        </button>
+
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">理念介紹</a>
+                        <a class="nav-item nav-link" href="#">作品</a>
+                        <a class="nav-item nav-link" href="#">團隊介紹</a>
+                        <a class="nav-item nav-link" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                        <a class="nav-item nav-link" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <ul id="circleNav">
+            <li id="circle1"></li>
+            <li id="circle2"></li>
+            <li></li>
+            <li></li>
+        </ul>
+
+        <div id="fullpage">
+
+            <div class="section section01">
+                <div class="slide" data-anchor="slide1">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h1 style="font-size: 110px; ">偷聽兒報</h1>
+                        <p style="font-size: 24px; letter-spacing: 10px;">貼心翻轉您對時下流行用語的觀點</p>
+                    </div>
+                </div>
+                <div class="slide" data-anchor="slide2">
+                    <div style="height: 100%;" class="d-flex flex-column justify-content-center align-items-center">
+                        <h1 style="font-size: 110px; ">你有聽說過</h1>
+                        <p style="font-size: 30px;">流行用語有助於增進親子關係嗎？</p>
+                    </div>
+                </div>
+                <div class="slide" data-anchor="slide3">
+                    <div style="height: 100%;" class="d-flex flex-column justify-content-center align-items-center">
+                        <h1 style="font-size: 110px; ">那你知道</h1>
+                        <p style="font-size: 30px;">傻眼貓咪嗎？</p>
+                    </div>
+                </div>
+            </div>
+            <div class="section" id="section02">
+            </div>
+            <div class="section" id="section03">
+                <div class="slideBox">
+                    <div class="left colorB" id="section03_Blue"></div>
+                    <div class="right colorW" id="section03_White"></div>
+                    <div class="list colorB" id="section03_List"></div>
+                    <div class="backBtn colorW" id="section03_BackBtn"></div>
+                </div>
+            </div>
+            <div class="section" id="section04">
+                <div class="slideBox">
+                    <div class="left colorY" id="section04_Yellow"></div>
+                    <div class="right colorW" id="section04_White"></div>
+                    <div class="list colorY" id="section04_List"></div>
+                    <div class="backBtn colorW" id="section04_BackBtn"></div>
+                </div>
+            </div>
+            <div class="section" id="section05">
+                <div class="slideBox">
+                    <div class="left Black" id="section05_Black"></div>
+                    <div class="right colorW" id="section05_White"></div>
+                    <div class="backBtn colorW" id="section05_BackBtn"></div>
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- Bootstrap CDN -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 " crossorigin="anonymous "></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 " crossorigin="anonymous "></script>
+
+        <!-- fullpage CDN -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/jquery.easings.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/vendors/scrolloverflow.min.js"></script>
+
+        <!-- skrollr CDN -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+
+        <!-- jquery.mousewheel CDN -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
+
+
+
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#fullpage').fullpage({
+                    sectionsColor: ['#E5E5E5', '#FFFFFF', '#14213D', '#FCA311', '#FFFFFF'],
+                    afterLoad: function(anchorLink, index) {
+                        if (index == 1) {
+                            $("#circleNav").css({
+                                left: '99%',
+                                opacity: '0'
+                            });
+                        }
+                        if (index == 2) {
+                            $("#circleNav").css({
+                                left: '99%',
+                                opacity: '0'
+                            }, 600, 'easeOutExpo');
+
+                            $("#circleNav").animate({
+                                left: '95%',
+                                opacity: '1'
+                            }, 600, 'easeOutExpo');
+                        }
+                        if (index == 3) {
+                            $("#section03_Blue").css({
+                                width: "50%"
+                            });
+                            $("#section03_White").css({
+                                width: "50%"
+                            });
+                            $("#section03_List").css({
+                                width: "0%"
+                            });
+                            $("#section03_BackBtn").css({
+                                width: "0%"
+                            });
+                            $("#circleNav").css({
+                                opacity: '1',
+                                left: '50%'
+                            });
+                        };
+                        if (index == 4) {
+                            $("#section04_Yellow").css({
+                                width: "50%"
+                            });
+                            $("#section04_White").css({
+                                width: "50%"
+                            });
+                            $("#section04_List").css({
+                                width: "0%"
+                            });
+                            $("#section04_BackBtn").css({
+                                width: "0%"
+                            });
+                            $("#circleNav").css({
+                                opacity: '1',
+                                left: '50%'
+                            });
+                        };
+                        if (index == 5) {
+                            $("#circleNav").css({
+                                opacity: '1',
+                                left: '50%'
+                            });
+                        };
+                    },
+                    onLeave: function(index, nextIndex, direction) {
+
+                        if (index == 2 && direction == 'up') {
+                            $("#circleNav").css({
+                                opacity: '0',
+                                left: '99%'
+                            });
+
+                        }
+                        if (index == 2 && direction == 'down') {
+                            $("#circleNav").css({
+                                opacity: '1',
+                                left: '95%'
+                            });
+                            $("#circleNav").animate({
+                                left: '99%',
+                                opacity: '0'
+                            }, 600, 'easeOutExpo');
+                            $("#circleNav").css({
+                                opacity: '0',
+                                left: '50%'
+                            });
+                            $("#section03_Blue").css({
+                                width: "50%"
+                            });
+                            $("#section03_White").css({
+                                width: "50%"
+                            });
+                            $("#section03_List").css({
+                                width: "0%"
+                            });
+                            $("#section03_BackBtn").css({
+                                width: "0%"
+                            });
+                            $("#circleNav").css({
+                                opacity: '0',
+                                left: '50%'
+                            });
+                        }
+                        if (index == 3 && direction == 'up') {
+
+                            $("#circleNav").css({
+                                opacity: '1'
+                            });
+                            $("#circleNav").animate({
+                                opacity: '0'
+                            }, 600, 'easeOutExpo');
+                        }
+                        if (index == 3 && direction == 'down') {
+                            $("#section04_Yellow").css({
+                                width: "50%"
+                            });
+                            $("#section04_White").css({
+                                width: "50%"
+                            });
+                            $("#section04_List").css({
+                                width: "0%"
+                            });
+                            $("#section04_BackBtn").css({
+                                width: "0%"
+                            });
+                            $("#circleNav").css({
+                                opacity: '1',
+                                left: '50%'
+                            });
+                        }
+                        if (index == 4 && direction == 'up') {
+                            $("#circleNav").css({
+                                opacity: '1',
+                                left: '50%'
+                            });
+                            $("#section03_Blue").css({
+                                width: "50%"
+                            });
+                            $("#section03_White").css({
+                                width: "50%"
+                            });
+                            $("#section03_List").css({
+                                width: "0%"
+                            });
+                            $("#section03_BackBtn").css({
+                                width: "0%"
+                            });
+                        }
+                        if (index == 4 && direction == 'down') {
+                            $("#section05_Black").css({
+                                width: "50%"
+                            });
+                            $("#section05_White").css({
+                                width: "50%"
+                            });
+                            $("#circleNav").css({
+                                opacity: '1',
+                                left: '50%'
+                            });
+                        }
+                        if (index == 5 && direction == 'up') {
+                            $("#section04_Yellow").css({
+                                width: "50%"
+                            });
+                            $("#section04_White").css({
+                                width: "50%"
+                            });
+                            $("#section04_List").css({
+                                width: "0%"
+                            });
+                            $("#section04_BackBtn").css({
+                                width: "0%"
+                            });
+                            $("#circleNav").css({
+                                opacity: '1',
+                                left: '50%'
+                            });
+                            $("#section05_Black").animate({
+                                "width": "50%"
+                            }, 600, 'easeOutElastic');
+                            $("#section05_White").animate({
+                                "width": "50%"
+                            }, 600, 'easeOutElastic');
+                            $("#circleNav").animate({
+                                "opacity": "1",
+                                "left": "50%"
+                            }, 600, 'easeOutExpo');
+
+                        }
+                    }
+                });
+
+                $('#section03_Blue').click(
+                    function() {
+                        $("#section03_Blue").css({
+                            "width": "50%"
+                        });
+                        $("#section03_White").css({
+                            "width": "50%"
+                        });
+                        $("#section03_List").css({
+                            "width": "0%"
+                        });
+                        $("#section03_BackBtn").css({
+                            "width": "0%"
+                        });
+                        $("#circleNav").css({
+                            "opacity": "1",
+                            "left": "50%"
+                        });
+                        $("#section03_Blue").animate({
+                            "width": "0%"
+                        }, 600, 'easeOutExpo');
+                        $("#section03_White").animate({
+                            "width": "65%"
+                        }, 600, 'easeOutExpo');
+                        $("#section03_List").animate({
+                            "width": "30%"
+                        }, 600, 'easeOutExpo');
+                        $("#section03_BackBtn").animate({
+                            "width": "5%"
+                        }, 600, 'easeOutExpo');
+                        $("#circleNav").animate({
+                            "left": "0%"
+                        }, 600, 'easeOutExpo');
+                    }
+                );
+                $('#section03_BackBtn').click(
+                    function() {
+                        $("#section03_Blue").css({
+                            "width": "0%",
+                            "height": "100%"
+                        });
+                        $("#section03_White").css({
+                            "width": "65%",
+                            "height": "100%"
+                        });
+                        $("#section03_List").css({
+                            "width": "30%",
+                            "height": "100%"
+                        });
+                        $("#section03_BackBtn").css({
+                            "width": "5%",
+                            "height": "100%"
+                        });
+                        $("#circleNav").css({
+                            "opacity": "1",
+                            "left": "0%"
+                        });
+                        $("#section03_Blue").animate({
+                            "width": "50%",
+                            "height": "100%"
+                        }, 600, 'easeOutExpo');
+                        $("#section03_White").animate({
+                            "width": "50%",
+                            "height": "100%"
+                        }, 600, 'easeOutExpo');
+                        $("#section03_List").animate({
+                            "width": "0%",
+                            "height": "100%"
+                        }, 600, 'easeOutExpo');
+                        $("#section03_BackBtn").animate({
+                            "width": "0%",
+                            "height": "100%"
+                        }, 600, 'easeOutExpo');
+                        $("#circleNav").animate({
+                            "opacity": "1",
+                            "left": "50%"
+                        }, 600, 'easeOutExpo');
+                    }
+                );
+
+                $('#section04_Yellow').click(
+                    function() {
+                        $("#section04_Yellow").css({
+                            "width": "50%"
+                        });
+                        $("#section04_White").css({
+                            "width": "50%"
+                        });
+                        $("#section04_List").css({
+                            "width": "0%"
+                        });
+                        $("#section04_BackBtn").css({
+                            "width": "0%"
+                        });
+                        $("#circleNav").css({
+                            "opacity": "1",
+                            "left": "50%"
+                        });
+                        $("#section04_Yellow").animate({
+                            "width": "0%"
+                        }, 600, 'easeOutExpo');
+                        $("#section04_White").animate({
+                            "width": "65%"
+                        }, 600, 'easeOutExpo');
+                        $("#section04_List").animate({
+                            "width": "30%"
+                        }, 600, 'easeOutExpo');
+                        $("#section04_BackBtn").animate({
+                            "width": "5%"
+                        }, 600, 'easeOutExpo');
+                        $("#circleNav").animate({
+                            "left": "0%"
+                        }, 600, 'easeOutExpo');
+                    }
+                );
+                $('#section04_BackBtn').click(
+                    function() {
+                        $("#section04_Yellow").css({
+                            "width": "0%",
+                            "height": "100%"
+                        });
+                        $("#section04_White").css({
+                            "width": "65%",
+                            "height": "100%"
+                        });
+                        $("#section04_List").css({
+                            "width": "30%",
+                            "height": "100%"
+                        });
+                        $("#section04_BackBtn").css({
+                            "width": "5%",
+                            "height": "100%"
+                        });
+                        $("#circleNav").css({
+                            "opacity": "1",
+                            "left": "0%"
+                        });
+                        $("#section04_Yellow").animate({
+                            "width": "50%",
+                            "height": "100%"
+                        }, 600, 'easeOutExpo');
+                        $("#section04_White").animate({
+                            "width": "50%",
+                            "height": "100%"
+                        }, 600, 'easeOutExpo');
+                        $("#section04_List").animate({
+                            "width": "0%",
+                            "height": "100%"
+                        }, 600, 'easeOutExpo');
+                        $("#section04_BackBtn").animate({
+                            "width": "0%",
+                            "height": "100%"
+                        }, 600, 'easeOutExpo');
+                        $("#circleNav").animate({
+                            "opacity": "1",
+                            "left": "50%"
+                        }, 600, 'easeOutExpo');
+                    }
+                );
+
+                $('#section05_Black').click(
+                    function() {
+                        $("#section05_Black").css({
+                            "width": "50%"
+                        });
+                        $("#section05_White").css({
+                            "width": "50%"
+                        });
+                        $("#circleNav").css({
+                            "opacity": "1",
+                            "left": "50%"
+                        });
+                        $("#section05_Black").animate({
+                            "width": "90%"
+                        }, 600, 'easeOutExpo');
+                        $("#section05_White").animate({
+                            "width": "10%"
+                        }, 600, 'easeOutExpo');
+                        $("#circleNav").animate({
+                            "left": "90%"
+                        }, 600, 'easeOutExpo');
+                    }
+                );
+                $('#section05_White').click(
+                    function() {
+                        $("#section05_Black").css({
+                            "width": "90%"
+                        });
+                        $("#section05_White").css({
+                            "width": "10%"
+                        });
+                        $("#circleNav").css({
+                            "opacity": "1",
+                            "left": "90%"
+                        });
+                        $("#section05_Black").animate({
+                            "width": "50%"
+                        }, 600, 'easeOutExpo');
+                        $("#section05_White").animate({
+                            "width": "50%"
+                        }, 600, 'easeOutExpo');
+                        $("#circleNav").animate({
+                            "opacity": "1",
+                            "left": "50%"
+                        }, 600, 'easeOutExpo');
+                    }
+                );
+
+
+            });
+        </script>
+
+
+    </body>
+
+</html>
