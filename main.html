@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.9.5/jquery.fullpage.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/css/swiper.min.css">
     <link rel="stylesheet" href="./css/main_style.css">
 
 
@@ -40,8 +41,8 @@
         <ul id="circleNav">
             <li id="circle1"></li>
             <li id="circle2"></li>
-            <li></li>
-            <li></li>
+            <li id="circle3"></li>
+            <li id="circle4"></li>
         </ul>
 
         <div id="fullpage">
@@ -72,7 +73,23 @@
                 <div class="slideBox">
                     <div class="left colorB" id="section03_Blue"></div>
                     <div class="right colorW" id="section03_White"></div>
-                    <div class="list colorB" id="section03_List"></div>
+                    <div class="list colorB" id="section03_List">
+                        <h1 class="collectionWord" id="section03_List_collectionWord">圖文列表集</h1>
+                        <!-- Slider main container -->
+                        <div class="swiper-container" id="section03_List_swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide colorW"></div>
+                                <div class="swiper-slide colorW"></div>
+                                <div class="swiper-slide colorW"></div>
+                                <div class="swiper-slide colorW"></div>
+                            </div>
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
                     <div class="backBtn colorW" id="section03_BackBtn"></div>
                 </div>
             </div>
@@ -80,13 +97,31 @@
                 <div class="slideBox">
                     <div class="left colorY" id="section04_Yellow"></div>
                     <div class="right colorW" id="section04_White"></div>
-                    <div class="list colorY" id="section04_List"></div>
+                    <div class="list colorY" id="section04_List">
+                        <h1 class="collectionWord" id="section04_List_collectionWord">動畫列表集</h1>
+                        <!-- Slider main container -->
+                        <div class="swiper-container" id="section04_List_swiper-container">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide colorW"></div>
+                                <div class="swiper-slide colorW"></div>
+                                <div class="swiper-slide colorW"></div>
+                                <div class="swiper-slide colorW"></div>
+                            </div>
+                            <!-- <div class="swiper-scrollbar"></div> -->
+                            <div class="swiper-pagination"></div>
+
+                        </div>
+                    </div>
                     <div class="backBtn colorW" id="section04_BackBtn"></div>
                 </div>
             </div>
             <div class="section" id="section05">
                 <div class="slideBox">
-                    <div class="left Black" id="section05_Black"></div>
+                    <div class="left Black" id="section05_Black">
+                        <div class="blackMask"></div>
+                    </div>
                     <div class="right colorW" id="section05_White"></div>
                     <div class="backBtn colorW" id="section05_BackBtn"></div>
                 </div>
@@ -113,6 +148,9 @@
         <!-- jquery.mousewheel CDN -->
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"></script>
 
+        <!-- swiper CDN -->
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.0.3/js/swiper.min.js"></script>
+
 
 
         <script type="text/javascript">
@@ -131,11 +169,26 @@
                                 left: '99%',
                                 opacity: '0'
                             }, 600, 'easeOutExpo');
-
                             $("#circleNav").animate({
                                 left: '95%',
                                 opacity: '1'
                             }, 600, 'easeOutExpo');
+                            $("#circle1").css({
+                                'background-color': '#ffffff',
+                                'border': '2px #E5E5E5 solid'
+                            }, 600, 'easeOutExpo');
+                            $("#circle2").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle3").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle4").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
                         }
                         if (index == 3) {
                             $("#section03_Blue").css({
@@ -153,6 +206,22 @@
                             $("#circleNav").css({
                                 opacity: '1',
                                 left: '50%'
+                            });
+                            $("#circle1").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle2").css({
+                                'background-color': '#14213D',
+                                'border': '0px'
+                            });
+                            $("#circle3").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle4").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
                             });
                         };
                         if (index == 4) {
@@ -172,11 +241,43 @@
                                 opacity: '1',
                                 left: '50%'
                             });
+                            $("#circle1").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle2").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle3").css({
+                                'background-color': '#FCA311',
+                                'border': '0px'
+                            });
+                            $("#circle4").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
                         };
                         if (index == 5) {
                             $("#circleNav").css({
                                 opacity: '1',
                                 left: '50%'
+                            });
+                            $("#circle1").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle2").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle3").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle4").css({
+                                'background-color': '#000000',
+                                'border': '0px'
                             });
                         };
                     },
@@ -245,6 +346,14 @@
                                 opacity: '1',
                                 left: '50%'
                             });
+                            $("#circle2").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle3").css({
+                                'background-color': '#FCA311',
+                                'border': '0px'
+                            });
                         }
                         if (index == 4 && direction == 'up') {
                             $("#circleNav").css({
@@ -263,6 +372,14 @@
                             $("#section03_BackBtn").css({
                                 width: "0%"
                             });
+                            $("#circle2").css({
+                                'background-color': '#14213D',
+                                'border': '0px'
+                            });
+                            $("#circle3").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
                         }
                         if (index == 4 && direction == 'down') {
                             $("#section05_Black").css({
@@ -274,6 +391,14 @@
                             $("#circleNav").css({
                                 opacity: '1',
                                 left: '50%'
+                            });
+                            $("#circle3").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
+                            $("#circle4").css({
+                                'background-color': '#000000',
+                                'border': '0px'
                             });
                         }
                         if (index == 5 && direction == 'up') {
@@ -303,6 +428,14 @@
                                 "opacity": "1",
                                 "left": "50%"
                             }, 600, 'easeOutExpo');
+                            $("#circle3").css({
+                                'background-color': '#FCA311',
+                                'border': '0px'
+                            });
+                            $("#circle4").css({
+                                'background-color': '#E5E5E5',
+                                'border': '0px'
+                            });
 
                         }
                     }
@@ -326,6 +459,13 @@
                             "opacity": "1",
                             "left": "50%"
                         });
+                        $("#section03_List_collectionWord").css({
+                            "opacity": "0"
+                        });
+                        $("#section03_List_swiper-container").css({
+                            "opacity": "0"
+                        });
+
                         $("#section03_Blue").animate({
                             "width": "0%"
                         }, 600, 'easeOutExpo');
@@ -341,6 +481,12 @@
                         $("#circleNav").animate({
                             "left": "0%"
                         }, 600, 'easeOutExpo');
+                        $("#section03_List_collectionWord").animate({
+                            "opacity": "1"
+                        }, 1500, 'easeInExpo');
+                        $("#section03_List_swiper-container").animate({
+                            "opacity": "1"
+                        }, 1500, 'easeInExpo');
                     }
                 );
                 $('#section03_BackBtn').click(
@@ -364,6 +510,12 @@
                         $("#circleNav").css({
                             "opacity": "1",
                             "left": "0%"
+                        });
+                        $("#section03_List_collectionWord").css({
+                            "opacity": "0"
+                        });
+                        $("#section03_List_swiper-container").css({
+                            "opacity": "0"
                         });
                         $("#section03_Blue").animate({
                             "width": "50%",
@@ -406,6 +558,12 @@
                             "opacity": "1",
                             "left": "50%"
                         });
+                        $("#section04_List_collectionWord").css({
+                            "opacity": "0"
+                        });
+                        $("#section04_List_swiper-container").css({
+                            "opacity": "0"
+                        });
                         $("#section04_Yellow").animate({
                             "width": "0%"
                         }, 600, 'easeOutExpo');
@@ -421,6 +579,12 @@
                         $("#circleNav").animate({
                             "left": "0%"
                         }, 600, 'easeOutExpo');
+                        $("#section04_List_collectionWord").animate({
+                            "opacity": "1"
+                        }, 1500, 'easeInExpo');
+                        $("#section04_List_swiper-container").animate({
+                            "opacity": "1"
+                        }, 1500, 'easeInExpo');
                     }
                 );
                 $('#section04_BackBtn').click(
@@ -444,6 +608,12 @@
                         $("#circleNav").css({
                             "opacity": "1",
                             "left": "0%"
+                        });
+                        $("#section04_List_collectionWord").css({
+                            "opacity": "0"
+                        });
+                        $("#section04_List_swiper-container").css({
+                            "opacity": "0"
                         });
                         $("#section04_Yellow").animate({
                             "width": "50%",
@@ -485,7 +655,7 @@
                         }, 600, 'easeOutExpo');
                         $("#section05_White").animate({
                             "width": "10%"
-                        }, 600, 'easeOutExpo');
+                        }, 600, 'easeInExpo');
                         $("#circleNav").animate({
                             "left": "90%"
                         }, 600, 'easeOutExpo');
@@ -515,6 +685,23 @@
                         }, 600, 'easeOutExpo');
                     }
                 );
+
+                var mySwiper = new Swiper('.swiper-container', {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        type: 'bullets',
+                        clickable: true,
+                    },
+                    grabCursor: true,
+                    spaceBetween: 30,
+                    direction: 'vertical',
+                    slidesPerView: 'auto',
+                    freeMode: true,
+                    scrollbar: {
+                        el: '.swiper-scrollbar',
+                    },
+                    mousewheel: true,
+                });
 
 
             });
