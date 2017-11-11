@@ -54,7 +54,7 @@
                         <p style="font-size: 24px; letter-spacing: 10px;">貼心翻轉您對時下流行用語的觀點</p>
                     </div>
                 </div>
-                <div class="slide" data-anchor="slide2">
+                <!-- <div class="slide" data-anchor="slide2">
                     <div style="height: 100%;" class="d-flex flex-column justify-content-center align-items-center">
                         <h1 style="font-size: 110px; ">你有聽說過</h1>
                         <p style="font-size: 30px;">流行用語有助於增進親子關係嗎？</p>
@@ -65,7 +65,7 @@
                         <h1 style="font-size: 110px; ">那你知道</h1>
                         <p style="font-size: 30px;">傻眼貓咪嗎？</p>
                     </div>
-                </div>
+                </div> -->
             </div>
             <div class="section" id="section02">
             </div>
@@ -90,7 +90,11 @@
 
                         </div>
                     </div>
-                    <div class="backBtn colorW" id="section03_BackBtn"></div>
+                    <div class="backBtn colorW" id="section03_BackBtn">
+                        <div style="width: 100%; height: 10%; position: absolute; top: 50%; color: #14213D; font-size: 30px;">
+                            <i class="fa fa-reply pl-3" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section" id="section04">
@@ -114,7 +118,11 @@
 
                         </div>
                     </div>
-                    <div class="backBtn colorW" id="section04_BackBtn"></div>
+                    <div class="backBtn colorW" id="section04_BackBtn">
+                        <div style="width: 100%; height: 10%; position: absolute; top: 50%; color: #FCA311; font-size: 30px;">
+                            <i class="fa fa-reply pl-3" aria-hidden="true"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="section" id="section05">
@@ -122,14 +130,19 @@
                     <div class="left Black" id="section05_Black">
                         <div class="blackMask"></div>
                     </div>
-                    <div class="right colorW" id="section05_White"></div>
-                    <div class="backBtn colorW" id="section05_BackBtn"></div>
+                    <div class="right colorW" id="section05_White">
+                        <div style="width: 100%; height: 100%; position: relative;">
+                            <div class="btn" style="opacity: 0; width: 100%; height: 10%; position: absolute; top: 50%; color: #000000; font-size: 30px;">
+                                <i class="fa fa-reply pl-2" aria-hidden="true"></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
         </div>
 
-
+        000000
 
         <!-- Bootstrap CDN -->
         <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
@@ -640,6 +653,9 @@
 
                 $('#section05_Black').click(
                     function() {
+                        $(".btn").css({
+                            "opacity": "1"
+                        });
                         $("#section05_Black").css({
                             "width": "50%"
                         });
@@ -650,6 +666,7 @@
                             "opacity": "1",
                             "left": "50%"
                         });
+
                         $("#section05_Black").animate({
                             "width": "90%"
                         }, 600, 'easeOutExpo');
@@ -659,6 +676,7 @@
                         $("#circleNav").animate({
                             "left": "90%"
                         }, 600, 'easeOutExpo');
+
                     }
                 );
                 $('#section05_White').click(
@@ -672,6 +690,9 @@
                         $("#circleNav").css({
                             "opacity": "1",
                             "left": "90%"
+                        });
+                        $(".btn").css({
+                            "opacity": "0"
                         });
                         $("#section05_Black").animate({
                             "width": "50%"
