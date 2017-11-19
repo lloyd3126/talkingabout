@@ -1,4 +1,12 @@
 @import url(//fonts.googleapis.com/earlyaccess/notosanstc.css);
+@font-face {
+    font-family: 'arrows';
+    src: url(//fonts/arrows/arrows.eot);
+    src: url(//fonts/arrows/arrows.eot?#iefix) format('embedded-opentype'), url(../fonts/arrows/arrows.woff) format(woff), url(../fonts/arrows/arrows.ttf) format(truetype), url(../fonts/arrows/arrows.svg#arrows) format(svg);
+    font-weight: normal;
+    font-style: normal;
+}
+
 .green {
     background-color: #86C166;
 }
@@ -27,8 +35,16 @@
     color: #000000;
 }
 
+.orangeB {
+    border: 1px solid #FC9F4D;
+}
+
 .letter-spacing-2 {
     letter-spacing: 3px;
+}
+
+.none {
+    visibility: hidden;
 }
 
 .cursor {
@@ -223,6 +239,9 @@ header p {
 
 .img05 {
     width: 100%;
+    -webkit-box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.14);
+    box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.14);
 }
 
 .paper .wordBox {
@@ -272,9 +291,232 @@ header p {
     line-height: 30px;
 }
 
+.box_txt {
+    height: auto;
+    width: 100%;
+}
+
+.box_txt h3 {
+    font-size: 16px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+}
+
+.txt {
+    width: 50px;
+    height: 50px;
+}
+
+.bb-custom-wrapper a:hover {
+    text-decoration: none;
+    outline: none;
+}
+
+.txtBox {
+    padding: 32px 0px;
+    width: 100%;
+    height: 510px;
+}
+
+.txt1 {
+    background-color: #ffffff;
+    height: 100%;
+    border-radius: 20px;
+    box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+}
+
+.txtBox .wordBox {
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+}
+
+.txtBox .wordBox h1 {
+    font-size: 120px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.txtBox .wordBox h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
+.txtBox .wordBox01 {
+    position: absolute;
+    left: 300px;
+    bottom: 50px;
+}
+
+.txtBox .wordBox01 h1 {
+    font-size: 120px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.txtBox .wordBox01 h2 {
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 5px;
+}
+
 @media (max-width: 575px) {
     .navbar a {
         font-size: 12px;
         letter-spacing: 1px;
+    }
+}
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+@media (max-width: 575px) {
+    .img01 .wordBox {
+        position: absolute;
+        right: 5%;
+        bottom: -35px;
+        -webkit-box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.14);
+        -moz-box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.14);
+        box-shadow: 0px 2px 14px 3px rgba(0, 0, 0, 0.14);
+    }
+    .img01 .wordBox h1 {
+        font-size: 80px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+    }
+    .img01 .wordBox h2 {
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        position: absolute;
+        bottom: -10px;
+        right: 0px;
+    }
+    .sec p {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 900;
+        color: #2c2c2c;
+        font-size: 14px;
+    }
+    .paper h3 {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: #FC9F4D;
+        font-size: 16px;
+    }
+    .paper p {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: #2c2c2c;
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .paper .wordBox {
+        width: 70%;
+        position: absolute;
+        top: 50px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    header p {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 900;
+        color: white;
+        font-size: 16px;
+    }
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) and (max-width: 767px) {
+    .img01 .wordBox h1 {
+        font-size: 100px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+    }
+    .img01 .wordBox h2 {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        position: absolute;
+        bottom: -20px;
+        right: 0px;
+    }
+    .paper h3 {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: #FC9F4D;
+        font-size: 20px;
+    }
+    .paper p {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: #2c2c2c;
+        font-size: 14px;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .img01 .wordBox h1 {
+        font-size: 100px;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: 500;
+    }
+    .img01 .wordBox h2 {
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 10px;
+        position: absolute;
+        bottom: -20px;
+        right: 0px;
+    }
+    .paper h3 {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 500;
+        color: #FC9F4D;
+        font-size: 20px;
+    }
+    .paper p {
+        text-align: center;
+        letter-spacing: 2px;
+        font-weight: 300;
+        color: #2c2c2c;
+        font-size: 14px;
+    }
+    .box_txt h3 {
+        font-size: 16px;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .paper .wordBox {
+        width: 70%;
+        position: absolute;
+        top: 100px;
+        left: 50%;
+        transform: translateX(-50%);
     }
 }

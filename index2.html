@@ -8,6 +8,9 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="./css/index1.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo1.css" />
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -16,9 +19,12 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+
+    <script src="js/modernizr.custom.js"></script>
+
 </head>
 
-<body>
+<body class="white">
 
     <div class="navbar m-0 fixed-top p-0 py-lg-3 white" style="top: 20px; left: 50%; transform: translateX(-50%);">
         <div class="container d-flex">
@@ -44,9 +50,10 @@
     </div>
     <header id="header" class="d-flex justify-content-center align-items-center">
         <div class=" d-flex flex-column align-items-center">
-            <img src="./img/04.png" alt="" class="col-4">
-            <p class="mt-4">當流行語在大手與小手間搭起溝通的橋樑</p>
-            <p class="mt-1">那<span class="greenW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
+            <img src="./img/04.png" alt="" class="col-8 col-sm-4">
+            <p class="mt-4 d-none d-sm-block">當流行語在大手與小手間搭起溝通的橋樑</p>
+            <p class="mt-1 d-none d-sm-block">那<span class="greenW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
+            <p class="mt-4 px-5 d-block d-sm-none text-justify text-center">當流行語在大手與小手間搭起溝通的橋樑，那<span class="greenW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
         </div>
         <div class="nav1">
             <i class="fa fa-angle-double-down icon whiteW" aria-hidden="true"></i>
@@ -57,7 +64,6 @@
         <div class="d-flex intro justify-content-center align-items-center">
             <div class="img01 col-12">
                 <div class="wordBox greenW">
-
                     <h1 class="m-0 p-0">About</h1>
                     <h2 class="m-0 p-0">關於計畫</h2>
                 </div>
@@ -65,24 +71,41 @@
         </div>
     </section>
     <section class="white sec">
-        <div class="container d-flex justify-content-center">
+        <div class="container d-flex justify-content-center mt-sm-4 mt-0">
             <div class="col-12 col-lg-10">
-                <p class="m-0 mb-3">每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做「<span class="greenW">流行語</span>」。</p>
-                <p class="m-0 mb-3">拜科技快速進步之賜，那些本應隨年齡增長埋入心田的市井用語開始衝擊著既有文化。</p>
-                <p class="m-0 mb-3">於是爆炸般成長的流行用語，挾帶著輿論與隔閡席捲而來。</p>
+                <p class="m-0 mb-3 d-none d-xl-block">每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做「<span class="greenW">流行語</span>」。 </p>
+                <p class="m-0 mb-3 d-none d-xl-block">拜科技快速進步之賜，那些本應隨年齡增長埋入心田的市井用語開始衝擊著既有文化。 </p>
+                <p class="m-0 mb-3 d-none d-xl-block">於是爆炸般成長的流行用語，挾帶著輿論與隔閡席捲而來。 </p>
+                <p class="m-0 mb-3 d-block d-xl-none text-justify"><b class="none">空空</b>每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做「<span class="greenW">流行語</span>」。拜科技快速進步之賜，那些本應隨年齡增長埋入心田的市井用語開始衝擊著既有文化。於是爆炸般成長的流行用語，挾帶著輿論與隔閡席捲而來。</p>
             </div>
         </div>
         <div class="container d-flex justify-content-center mt-5">
             <div class="col-12 col-lg-10 paper">
                 <div class="wordBox">
                     <div class="part01 d-flex flex-column align-items-center">
-                        <h3 class="m-0 text-center mb-3">More About / 關於偷聽計畫</h3>
-                        <p class="m-0 text-center text-justify">- 有跟上潮流的人們，總是得意的自顧自說著難以了解的話語。</p>
-                        <p class="m-0 text-center text-justify">- 沒跟上潮流的人們，無論自願與否目前都已被時代拋在後頭。</p>
-                        <div class="line02 my-3"></div>
-                        <p class="m-0 text-justify mt-2 longText">「偷聽計畫」是偷聽兒報多媒體製作團隊自2017年至2018年的製作專案，是團隊經由分析目前造成世代隔閡的常見可能因素中得到的啟發，我們發現「流行用語」存在的本身就代表著世代差異，但並不一定代表將成為世代隔閡。因此偷聽計畫的產生就是希望家長們能藉由團隊設計並實作的動畫與手繪圖文集，快速通過未來能自行了解流行用語的最低門檻，藉以提出一項能解決世代隔閡的方案。</p>
-                        <div class="box_img06 my-3">
-                            <img src="./img/06.png" alt="" class="img06 mt-5">
+                        <h3 class="m-0 text-center mb-3 "><span class="d-none d-sm-inline-block mr-sm-2">More About</span>關於偷聽計畫</h3>
+                        <p class="m-0 text-center text-justify d-none d-md-block">- 有跟上潮流的人們，總是得意的自顧自說著難以了解的話語。</p>
+                        <p class="m-0 text-center text-justify d-none d-md-block">- 沒跟上潮流的人們，無論自願與否目前都已被時代拋在後頭。</p>
+                        <p class="m-0 mb-sm-3 mb-2 d-sm-block d-none d-md-none text-justify"><b class="none">空空</b>有跟上潮流的人們，總是得意的自顧自說著難以了解的話語。沒跟上潮流的人們，無論自願與否目前都已被時代拋在後頭。</p>
+
+                        <div class="line02 my-md-3 my-1"></div>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText"><b class="none">空空</b>「偷聽計畫」是偷聽兒報多媒體製作團隊自2017年至2018年的製作專案，是團隊經由分析目前造成世代隔閡的常見可能因素中得到的啟發，我們發現「流行用語」存在的本身就代表著世代差異，但並不一定代表將成為世代隔閡。因此偷聽計畫的產生就是希望家長們能藉由團隊設計並實作的動畫與手繪圖文集，快速通過未來能自行了解流行用語的最低門檻，藉以提出一項能解決世代隔閡的方案。</p>
+                        <div class="box_img06 my-3 d-none d-sm-block">
+                            <img src="./img/06.png" alt="" class="img06 mt-md-2 mt-0">
+                        </div>
+                        <div class="box_txt mt-xl-5 mt-0 d-md-flex flex-row d-none">
+                            <div class="box col-12 col-md-6 p-0 px-md-5 py-md-3">
+                                <img src="./img/08.jpg" alt="" class="img06 orangeB">
+                                <h3 class="m-0 text-center my-lg-3 my-2"><span class="d-none d-lg-inline-block mr-lg-1">E-book</span>手繪圖文集</h3>
+                                <p class="m-0 text-center text-justify d-none d-xl-block">設計能與動畫主題對應的四部手繪故事本。</p>
+                            </div>
+                            <div class="box col-12 col-md-6 p-0 px-md-5 py-md-3">
+                                <img src="./img/07.jpg" alt="" class="img06 orangeB">
+                                <h3 class="m-0 text-center my-lg-3 my-2"><span class="d-none d-lg-inline-block mr-lg-1">Animation</span>動畫集</h3>
+                                <p class="m-0 text-center text-justify d-none d-xl-block">分析歸納常見流行語種類並製作情境動畫。
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -90,7 +113,67 @@
             </div>
         </div>
     </section>
-    <section id="content" class="section white ">2</section>
+    <section id="content" class="section white mt-5 blackB">
+    </section>
+    <section class="white ">
+        <div class="container d-flex flex-column">
+            <div class="ebookPage col-12 ">
+                <div class="ebookBox d-flex">
+                    <div class="main clearfix">
+                        <div class="bb-custom-wrapper">
+                            <div id="bb-bookblock" class="bb-bookblock">
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bKVq"><img src="img/ebook1.jpg" alt="image01" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/ciTX"><img src="img/ebook2.jpg" alt="image02" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/cLHx"><img src="img/ebook3.jpg" alt="image03" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bAfn"><img src="img/ebook4.jpg" alt="image04" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/dcbE"><img src="img/ebook5.jpg" alt="image05" /></a>
+                                </div>
+                            </div>
+                            <nav>
+                                <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                                <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                                <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                                <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 p-0 ">
+                        <div class="txtBox">
+                            <div class="d-flex flex-column py-4 px-4 txt1">
+                                <h3 class="m-0 text-center mb-2">表情符號篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">(´･ω･`)</span></h3>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
+                                <div class="wordBox greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">XD</h1>
+                                        <h2 class="m-0 p-0 text-center">翻轉90度</h2>
+                                    </div>
+                                </div>
+                                <div class="wordBox01 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">QQ</h1>
+                                        <h2 class="m-0 p-0 text-center">這個不用轉</h2>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="animationPage col-12 green">123</div>
+        </div>
+    </section>
     <section id="about" class="section white">3</section>
 
 
@@ -100,8 +183,94 @@
     <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- bookblock -->
+    <script type="text/javascript " src="js/jquerypp.custom.js"></script>
+    <script type="text/javascript " src="js/jquery.bookblock.js"></script>
+    <script>
+        var Page = (function() {
 
+            var config = {
+                    $bookBlock: $('#bb-bookblock'),
+                    $navNext: $('#bb-nav-next'),
+                    $navPrev: $('#bb-nav-prev'),
+                    $navFirst: $('#bb-nav-first'),
+                    $navLast: $('#bb-nav-last')
+                },
+                init = function() {
+                    config.$bookBlock.bookblock({
+                        speed: 800,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.7
+                    });
+                    initEvents();
+                },
+                initEvents = function() {
 
+                    var $slides = config.$bookBlock.children();
+
+                    // add navigation events
+                    config.$navNext.on('click touchstart', function() {
+                        config.$bookBlock.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev.on('click touchstart', function() {
+                        config.$bookBlock.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst.on('click touchstart', function() {
+                        config.$bookBlock.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast.on('click touchstart', function() {
+                        config.$bookBlock.bookblock('last');
+                        return false;
+                    });
+
+                    // add swipe events
+                    $slides.on({
+                        'swipeleft': function(event) {
+                            config.$bookBlock.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            config.$bookBlock.bookblock('prev');
+                            return false;
+                        }
+                    });
+
+                    // add keyboard events
+                    $(document).keydown(function(e) {
+                        var keyCode = e.keyCode || e.which,
+                            arrow = {
+                                left: 37,
+                                up: 38,
+                                right: 39,
+                                down: 40
+                            };
+
+                        switch (keyCode) {
+                            case arrow.left:
+                                config.$bookBlock.bookblock('prev');
+                                break;
+                            case arrow.right:
+                                config.$bookBlock.bookblock('next');
+                                break;
+                        }
+                    });
+                };
+
+            return {
+                init: init
+            };
+
+        })();
+    </script>
+    <script>
+        Page.init();
+    </script>
     <script>
         $(function() {
 
@@ -174,8 +343,11 @@
                 $('.line').addClass("m03");
 
             });
+
+
         });
     </script>
+
 
 </body>
 
