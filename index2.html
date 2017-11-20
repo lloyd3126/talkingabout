@@ -11,6 +11,7 @@
     <link rel="stylesheet" type="text/css" href="css/default.css" />
     <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
     <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/2.0.7/plyr.css" />
 
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,8 +20,10 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
     <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
-
+    <link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/5.19/video.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
+    <script src="https://cdn.plyr.io/2.0.7/plyr.js"></script>
 
 </head>
 
@@ -114,10 +117,19 @@
         </div>
     </section>
     <section id="content" class="section white mt-5 blackB">
+        <div class="d-flex intro justify-content-center align-items-center">
+            <div class="img02 col-12">
+                <div class="wordBox greenW">
+                    <h1 class="m-0 p-0">About</h1>
+                    <h2 class="m-0 p-0">關於計畫</h2>
+                </div>
+            </div>
+        </div>
     </section>
     <section class="white ">
         <div class="container d-flex flex-column">
-            <div class="ebookPage col-12 ">
+            <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-paint-brush mr-3" aria-hidden="true"></i>手繪圖文集 E-book </p>
+            <div class="ebookPage col-12">
                 <div class="ebookBox d-flex">
                     <div class="main clearfix">
                         <div class="bb-custom-wrapper">
@@ -157,13 +169,162 @@
                                 <div class="wordBox greenW">
                                     <div class="d-inline-flex flex-column">
                                         <h1 class="m-0 p-0">XD</h1>
-                                        <h2 class="m-0 p-0 text-center">翻轉90度</h2>
                                     </div>
                                 </div>
                                 <div class="wordBox01 greenW">
                                     <div class="d-inline-flex flex-column">
-                                        <h1 class="m-0 p-0">QQ</h1>
-                                        <h2 class="m-0 p-0 text-center">這個不用轉</h2>
+                                        <h1 class="m-0 p-0">囧</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ebookBox d-flex ">
+                    <div class="main clearfix">
+                        <div class="bb-custom-wrapper">
+                            <div id="bb-bookblock1" class="bb-bookblock">
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bKVq"><img src="img/ebook1.jpg" alt="image01" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/ciTX"><img src="img/ebook2.jpg" alt="image02" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/cLHx"><img src="img/ebook3.jpg" alt="image03" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bAfn"><img src="img/ebook4.jpg" alt="image04" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/dcbE"><img src="img/ebook5.jpg" alt="image05" /></a>
+                                </div>
+                            </div>
+                            <nav>
+                                <a id="bb-nav-first1" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                                <a id="bb-nav-prev1" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                                <a id="bb-nav-next1" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                                <a id="bb-nav-last1" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 p-0 ">
+                        <div class="txtBox">
+                            <div class="d-flex flex-column py-4 px-4 txt1">
+                                <h3 class="m-0 text-center mb-2">注音符號篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">ㄏㄏ</span></h3>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
+                                <div class="wordBox02 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">ㄏㄏ</h1>
+                                    </div>
+                                </div>
+                                <div class="wordBox03 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">ㄎㄎ</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ebookBox d-flex">
+                    <div class="main clearfix">
+                        <div class="bb-custom-wrapper">
+                            <div id="bb-bookblock2" class="bb-bookblock">
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bKVq"><img src="img/ebook1.jpg" alt="image01" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/ciTX"><img src="img/ebook2.jpg" alt="image02" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/cLHx"><img src="img/ebook3.jpg" alt="image03" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bAfn"><img src="img/ebook4.jpg" alt="image04" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/dcbE"><img src="img/ebook5.jpg" alt="image05" /></a>
+                                </div>
+                            </div>
+                            <nav>
+                                <a id="bb-nav-first2" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                                <a id="bb-nav-prev2" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                                <a id="bb-nav-next2" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                                <a id="bb-nav-last2" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 p-0 ">
+                        <div class="txtBox">
+                            <div class="d-flex flex-column py-4 px-4 txt1">
+                                <h3 class="m-0 text-center mb-2">英文與數字篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">8+9</span></h3>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
+                                <div class="wordBox02 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">8+9</h1>
+                                    </div>
+                                </div>
+                                <div class="wordBox03 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">BGM</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ebookBox d-flex ">
+                    <div class="main clearfix">
+                        <div class="bb-custom-wrapper">
+                            <div id="bb-bookblock3" class="bb-bookblock">
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bKVq"><img src="img/ebook1.jpg" alt="image01" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/ciTX"><img src="img/ebook2.jpg" alt="image02" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/cLHx"><img src="img/ebook3.jpg" alt="image03" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bAfn"><img src="img/ebook4.jpg" alt="image04" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/dcbE"><img src="img/ebook5.jpg" alt="image05" /></a>
+                                </div>
+                            </div>
+                            <nav>
+                                <a id="bb-nav-first3" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                                <a id="bb-nav-prev3" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                                <a id="bb-nav-next3" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                                <a id="bb-nav-last3" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 p-0 ">
+                        <div class="txtBox">
+                            <div class="d-flex flex-column py-4 px-4 txt1">
+                                <h3 class="m-0 text-center mb-2">特殊詞囊篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">大大</span></h3>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
+                                <div class="wordBox02 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">大大</h1>
+                                    </div>
+                                </div>
+                                <div class="wordBox03 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">嘖嘖</h1>
+
                                     </div>
                                 </div>
                             </div>
@@ -171,7 +332,53 @@
                     </div>
                 </div>
             </div>
-            <div class="animationPage col-12 green">123</div>
+            <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-video-camera mr-3" aria-hidden="true"></i>動畫集 Animation </p>
+            <div class="animationPage d-flex flex-wrap col-12 p-0">
+                <div class="videoBox mt-3 col-6">
+                    <div class="container p-2 m-0">
+                        <div data-type="vimeo" data-video-id="243619686"></div>
+                    </div>
+                    <div class="container1 p-3">
+                        <h3 class="m-0 text-center mb-2">表情符號篇</h3>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                        </p>
+                    </div>
+                </div>
+                <div class="videoBox mt-3 col-6">
+                    <div class="container p-2 m-0">
+                        <div data-type="vimeo" data-video-id="243619821"></div>
+                    </div>
+                    <div class="container1 p-3">
+                        <h3 class="m-0 text-center mb-2">注音符號篇</h3>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                        </p>
+                    </div>
+                </div>
+                <div class="videoBox mt-3 col-6">
+                    <div class="container p-2 m-0">
+                        <div data-type="vimeo" data-video-id="243619686"></div>
+                    </div>
+                    <div class="container1 p-3">
+                        <h3 class="m-0 text-center mb-2">英文與數字篇</h3>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                        </p>
+                    </div>
+                </div>
+                <div class="videoBox mt-3 col-6">
+                    <div class="container p-2 m-0">
+                        <div data-type="vimeo" data-video-id="243619686"></div>
+                    </div>
+                    <div class="container1 p-3">
+                        <h3 class="m-0 text-center mb-2">特殊詞囊篇</h3>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                        </p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section id="about" class="section white">3</section>
@@ -187,6 +394,57 @@
     <script type="text/javascript " src="js/jquerypp.custom.js"></script>
     <script type="text/javascript " src="js/jquery.bookblock.js"></script>
     <script>
+        (function() {
+            // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+            // e.g. just plyr.setup(); and leave it at that if you have no need for events
+            var instances = plyr.setup({
+                // Output to console
+                debug: true
+            });
+
+            // Get an element
+            function get(selector) {
+                return document.querySelector(selector);
+            }
+
+            // Custom event handler (just for demo)
+            function on(element, type, callback) {
+                if (!(element instanceof HTMLElement)) {
+                    element = get(element);
+                }
+                element.addEventListener(type, callback, false);
+            }
+
+            // Loop through each instance
+            instances.forEach(function(instance) {
+                // Play
+                on('.js-play', 'click', function() {
+                    instance.play();
+                });
+
+                // Pause
+                on('.js-pause', 'click', function() {
+                    instance.pause();
+                });
+
+                // Stop
+                on('.js-stop', 'click', function() {
+                    instance.stop();
+                });
+
+                // Rewind
+                on('.js-rewind', 'click', function() {
+                    instance.rewind();
+                });
+
+                // Forward
+                on('.js-forward', 'click', function() {
+                    instance.forward();
+                });
+            });
+        })();
+    </script>
+    <script>
         var Page = (function() {
 
             var config = {
@@ -194,10 +452,40 @@
                     $navNext: $('#bb-nav-next'),
                     $navPrev: $('#bb-nav-prev'),
                     $navFirst: $('#bb-nav-first'),
-                    $navLast: $('#bb-nav-last')
+                    $navLast: $('#bb-nav-last'),
+                    $bookBlock1: $('#bb-bookblock1'),
+                    $navNext1: $('#bb-nav-next1'),
+                    $navPrev1: $('#bb-nav-prev1'),
+                    $navFirst1: $('#bb-nav-first1'),
+                    $navLast1: $('#bb-nav-last1'),
+                    $bookBlock2: $('#bb-bookblock2'),
+                    $navNext2: $('#bb-nav-next2'),
+                    $navPrev2: $('#bb-nav-prev2'),
+                    $navFirst2: $('#bb-nav-first2'),
+                    $navLast2: $('#bb-nav-last2'),
+                    $bookBlock3: $('#bb-bookblock3'),
+                    $navNext3: $('#bb-nav-next3'),
+                    $navPrev3: $('#bb-nav-prev3'),
+                    $navFirst3: $('#bb-nav-first3'),
+                    $navLast3: $('#bb-nav-last3')
                 },
                 init = function() {
                     config.$bookBlock.bookblock({
+                        speed: 800,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.7
+                    });
+                    config.$bookBlock1.bookblock({
+                        speed: 800,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.7
+                    });
+                    config.$bookBlock2.bookblock({
+                        speed: 800,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.7
+                    });
+                    config.$bookBlock3.bookblock({
                         speed: 800,
                         shadowSides: 0.8,
                         shadowFlip: 0.7
@@ -207,8 +495,11 @@
                 initEvents = function() {
 
                     var $slides = config.$bookBlock.children();
+                    var $slides1 = config.$bookBlock1.children();
+                    var $slides2 = config.$bookBlock2.children();
+                    var $slides3 = config.$bookBlock3.children();
 
-                    // add navigation events
+                    // add navigation events 
                     config.$navNext.on('click touchstart', function() {
                         config.$bookBlock.bookblock('next');
                         return false;
@@ -229,6 +520,70 @@
                         return false;
                     });
 
+                    // add navigation events 1
+                    config.$navNext1.on('click touchstart', function() {
+                        config.$bookBlock1.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev1.on('click touchstart', function() {
+                        config.$bookBlock1.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst1.on('click touchstart', function() {
+                        config.$bookBlock1.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast1.on('click touchstart', function() {
+                        config.$bookBlock1.bookblock('last');
+                        return false;
+                    });
+
+                    // add navigation events 2
+                    config.$navNext2.on('click touchstart', function() {
+                        config.$bookBlock2.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev2.on('click touchstart', function() {
+                        config.$bookBlock2.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst2.on('click touchstart', function() {
+                        config.$bookBlock2.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast2.on('click touchstart', function() {
+                        config.$bookBlock2.bookblock('last');
+                        return false;
+                    });
+
+                    // add navigation events 3
+                    config.$navNext3.on('click touchstart', function() {
+                        config.$bookBlock3.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev3.on('click touchstart', function() {
+                        config.$bookBlock3.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst3.on('click touchstart', function() {
+                        config.$bookBlock3.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast3.on('click touchstart', function() {
+                        config.$bookBlock3.bookblock('last');
+                        return false;
+                    });
+
+
                     // add swipe events
                     $slides.on({
                         'swipeleft': function(event) {
@@ -237,6 +592,30 @@
                         },
                         'swiperight': function(event) {
                             config.$bookBlock.bookblock('prev');
+                            return false;
+                        },
+                        'swipeleft': function(event) {
+                            config.$bookBlock1.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            config.$bookBlock1.bookblock('prev');
+                            return false;
+                        },
+                        'swipeleft': function(event) {
+                            config.$bookBlock2.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            config.$bookBlock2.bookblock('prev');
+                            return false;
+                        },
+                        'swipeleft': function(event) {
+                            config.$bookBlock3.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            config.$bookBlock3.bookblock('prev');
                             return false;
                         }
                     });
@@ -254,9 +633,15 @@
                         switch (keyCode) {
                             case arrow.left:
                                 config.$bookBlock.bookblock('prev');
+                                config.$bookBlock1.bookblock('prev');
+                                config.$bookBlock2.bookblock('prev');
+                                config.$bookBlock3.bookblock('prev');
                                 break;
                             case arrow.right:
                                 config.$bookBlock.bookblock('next');
+                                config.$bookBlock1.bookblock('next');
+                                config.$bookBlock2.bookblock('next');
+                                config.$bookBlock3.bookblock('next');
                                 break;
                         }
                     });

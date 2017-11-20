@@ -330,38 +330,115 @@ header p {
 
 .txtBox .wordBox {
     position: absolute;
-    left: 100px;
-    bottom: 50px;
+    left: 25%;
+    bottom: 60px;
 }
 
 .txtBox .wordBox h1 {
     font-size: 120px;
-    font-family: 'Ubuntu', sans-serif;
+    font-family: 'Noto Sans TC', 'Ubuntu', sans-serif;
     font-weight: 500;
-}
-
-.txtBox .wordBox h2 {
-    font-size: 24px;
-    font-weight: 700;
-    letter-spacing: 5px;
 }
 
 .txtBox .wordBox01 {
     position: absolute;
-    left: 300px;
-    bottom: 50px;
+    right: 25%;
+    bottom: 60px;
 }
 
 .txtBox .wordBox01 h1 {
     font-size: 120px;
+    font-family: 'Noto Sans TC', 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.txtBox .wordBox02 {
+    position: absolute;
+    left: 15%;
+    bottom: 60px;
+}
+
+.txtBox .wordBox02 h1 {
+    font-size: 100px;
+    font-family: 'Noto Sans TC', 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.txtBox .wordBox03 {
+    position: absolute;
+    right: 15%;
+    bottom: 60px;
+}
+
+.txtBox .wordBox03 h1 {
+    font-size: 100px;
+    font-family: 'Noto Sans TC', 'Ubuntu', sans-serif;
+    font-weight: 500;
+}
+
+.img02 {
+    background-image: url(https://i.imgur.com/8VgDLrb.jpg);
+    height: 500px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    -moz-background-size: cover;
+    background-size: cover;
+    position: relative;
+}
+
+.img02 .wordBox {
+    position: absolute;
+    right: 10%;
+    bottom: -70px;
+}
+
+.img02 .wordBox h1 {
+    font-size: 150px;
     font-family: 'Ubuntu', sans-serif;
     font-weight: 500;
 }
 
-.txtBox .wordBox01 h2 {
-    font-size: 24px;
+.img02 .wordBox h2 {
+    font-size: 40px;
     font-weight: 700;
-    letter-spacing: 5px;
+    letter-spacing: 10px;
+    position: absolute;
+    bottom: -20px;
+    right: 0px;
+}
+
+.videoBox {
+    width: 100%;
+    height: auto;
+}
+
+.fz40 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #FC9F4D;
+}
+
+
+/* This is purely for the demo */
+
+.animationPage .container {
+    max-width: 800px;
+    height: 300px;
+    margin: 0 auto;
+    box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+    background-color: #fff;
+}
+
+.animationPage .container1 {
+    max-width: 800px;
+    height: auto;
+    box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+    background-color: #fff;
+}
+
+.plyr {
+    border-radius: 4px;
+    margin-bottom: 15px;
 }
 
 @media (max-width: 575px) {
