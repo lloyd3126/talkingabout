@@ -176,7 +176,7 @@ header p {
     height: 50px;
     position: absolute;
     bottom: 0;
-    background-image: url('https://i.imgur.com/uElOuOS.png');
+    background-image: url(https://i.imgur.com/uElOuOS.png);
     background-repeat: no-repeat;
     background-position: center center;
     -moz-background-size: cover;
