@@ -1,216 +1,730 @@
 <!DOCTYPE html>
-<html lang="zh-Hang-TW">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>偷聽兒報 Talking About</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/style.css">
+    <title>Document</title>
 
+    <link rel="stylesheet" href="./css/index1.css">
+    <link rel="stylesheet" type="text/css" href="css/default.css" />
+    <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+    <link rel="stylesheet" type="text/css" href="css/demo1.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/2.0.7/plyr.css" />
 
+    <!-- font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <body>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="https://i.imgur.com/g0tSu1J.png" width="auto" height="30" class="d-inline-block align-top" alt=""> 偷聽兒報 Talking About
+    <!-- bootstrap4 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700" rel="stylesheet">
+    <link href="//vjs.zencdn.net/5.19/video-js.min.css" rel="stylesheet">
+    <script src="//vjs.zencdn.net/5.19/video.min.js"></script>
+    <script src="js/modernizr.custom.js"></script>
+    <script src="https://cdn.plyr.io/2.0.7/plyr.js"></script>
+
+</head>
+
+<body class="white">
+
+    <div class="navbar m-0 fixed-top p-0 py-lg-3 white" style="top: 20px; left: 50%; transform: translateX(-50%);">
+        <div class="container d-flex">
+            <div class="cursor col-12 col-lg-4 logo d-flex greenW font-weight-normal justify-content-lg-start justify-content-center align-items-center">
+                <a id="btn_header" href="#header" class="logo">
+                    <img src="./img/03.png" alt="" class=" d-none d-lg-flex">
+                    <img src="./img/02.png" alt="" class=" d-lg-none d-flex mt-2">
                 </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                     <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-item nav-link" href="#">首頁 <span class="sr-only">(current)</span></a>
-                        <a class="nav-item nav-link" href="#">理念介紹</a>
-                        <a class="nav-item nav-link" href="#">作品</a>
-                        <a class="nav-item nav-link" href="#">團隊介紹</a>
-                        <a class="nav-item nav-link" href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-                        <a class="nav-item nav-link" href="#"><i class="fa fa-youtube" aria-hidden="true"></i></a>
-                    </div>
+                <!-- <p class=" m-0 d-none d-lg-flex">偷聽兒報</p> -->
+            </div>
+            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-lg-end align-items-center align-items-lg-end p-0 navWord mt-1 m-lg-0 pb-1 pb-lg-0">
+                <div>
+                    <a id="btn_objective" href="#objective" class="navA d-inline-block mx-2 mx-lg-3 greenW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-rocket mr-1" aria-hidden="true"></i>專題目標</a>
+                    <a id="btn_content" href="#content" class="navA d-inline-block mx-2 mx-lg-3 greenW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-file mr-1" aria-hidden="true"></i>作品內容</a>
+                    <a id="btn_about" href="#about" class="navA d-inline-block mx-2 mx-lg-3 greenW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-address-card-o mr-1" aria-hidden="true"></i>關於我們</a>
+                </div>
+                <div class="lineBox">
+                    <div class="line d-none d-lg-block"></div>
                 </div>
             </div>
-        </nav>
 
-        <div class=" nav">
-            <ul style="list-style-type:none;" class="circleFix d-flex flex-column align-items-center justify-content-around" data-0="transform: scale(0)" data-400="transform: scale(0)" data-500="transform: scale(1)" data-3000="transform: scale(1)" data-3100="transform: scale(0)">
-                <li class="circle active"></li>
-                <li class="circle"></li>
-                <li class="circle"></li>
-                <li class="circle"></li>
-            </ul>
         </div>
+    </div>
+    <header id="header" class="d-flex justify-content-center align-items-center">
+        <div class=" d-flex flex-column align-items-center">
+            <img src="./img/04.png" alt="" class="col-8 col-sm-4">
+            <p class="mt-4 d-none d-sm-block">當流行語在大手與小手間搭起溝通的橋樑</p>
+            <p class="mt-1 d-none d-sm-block">那<span class="greenW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
+            <p class="mt-4 px-5 d-block d-sm-none text-justify text-center">當流行語在大手與小手間搭起溝通的橋樑，那<span class="greenW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
+        </div>
+        <div class="nav1">
+            <i class="fa fa-angle-double-down icon whiteW" aria-hidden="true"></i>
+        </div>
+    </header>
 
-        <header style="border-top: 50px solid #FCA311">
-            <div id="carouselExampleIndicators" class="carousel slide up2" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active header-carousel-item bg-cover pt-5" style="background-color: #FCA311;">
-                        <div style="height: 100%;" class="d-flex flex-column justify-content-center align-items-center">
-                            <h1 style="font-size: 110px;color: black; ">你有想過</h1>
-                            <p style="font-size: 30px;color: black;">有一天流行用語終將納入「課綱」嗎？</p>
+    <section id="objective" class="section white d-flex justify-content-center align-items-center">
+        <div class="d-flex intro justify-content-center align-items-center">
+            <div class="img01 col-12">
+                <div class="wordBox greenW">
+                    <h1 class="m-0 p-0">About</h1>
+                    <h2 class="m-0 p-0">關於計畫</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="white sec mb-3">
+        <div class="container d-flex justify-content-center mt-sm-4 mt-0">
+            <div class="col-12 col-lg-10">
+                <p class="m-0 mb-3 d-none d-xl-block">每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做「<span class="greenW">流行語</span>」。 </p>
+                <p class="m-0 mb-3 d-none d-xl-block">拜科技快速進步之賜，那些本應隨年齡增長埋入心田的市井用語開始衝擊著既有文化。 </p>
+                <p class="m-0 mb-3 d-none d-xl-block">於是爆炸般成長的流行用語，挾帶著輿論與隔閡席捲而來。 </p>
+                <p class="m-0 mb-3 d-block d-xl-none text-justify"><b class="none">空空</b>每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做「<span class="greenW">流行語</span>」。拜科技快速進步之賜，那些本應隨年齡增長埋入心田的市井用語開始衝擊著既有文化。於是爆炸般成長的流行用語，挾帶著輿論與隔閡席捲而來。</p>
+            </div>
+        </div>
+        <div class="container d-flex justify-content-center mt-5">
+            <div class="col-12 col-lg-10 paper">
+                <div class="wordBox">
+                    <div class="part01 d-flex flex-column align-items-center">
+                        <h3 class="m-0 text-center mb-3 "><span class="d-none d-sm-inline-block mr-sm-2">More About</span>關於偷聽計畫</h3>
+                        <p class="m-0 text-center text-justify d-none d-md-block">- 有跟上潮流的人們，總是得意的自顧自說著難以了解的話語。</p>
+                        <p class="m-0 text-center text-justify d-none d-md-block">- 沒跟上潮流的人們，無論自願與否目前都已被時代拋在後頭。</p>
+                        <p class="m-0 mb-sm-3 mb-2 d-sm-block d-none d-md-none text-justify"><b class="none">空空</b>有跟上潮流的人們，總是得意的自顧自說著難以了解的話語。沒跟上潮流的人們，無論自願與否目前都已被時代拋在後頭。</p>
+
+                        <div class="line02 my-md-3 my-1"></div>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText"><b class="none">空空</b>「偷聽計畫」是偷聽兒報多媒體製作團隊自2017年至2018年的製作專案，是團隊經由分析目前造成世代隔閡的常見可能因素中得到的啟發，我們發現「流行用語」存在的本身就代表著世代差異，但並不一定代表將成為世代隔閡。因此偷聽計畫的產生就是希望家長們能藉由團隊設計並實作的動畫與手繪圖文集，快速通過未來能自行了解流行用語的最低門檻，藉以提出一項能解決世代隔閡的方案。</p>
+                        <div class="box_img06 my-3 d-none d-sm-block">
+                            <img src="./img/06.png" alt="" class="img06 mt-md-2 mt-0">
                         </div>
-                    </div>
-                    <div class="carousel-item header-carousel-item bg-cover pt-5" style="background-color: #FCA311;">
-                        <div style="height: 100%;" class="d-flex flex-column justify-content-center align-items-center">
-                            <h1 style="font-size: 110px;color: black; ">你有聽說過</h1>
-                            <p style="font-size: 30px;color: black;">流行用語有助於增進親子關係嗎？</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item header-carousel-item bg-cover pt-5" style="background-color: #FCA311;">
-                        <div style="height: 100%;" class="d-flex flex-column justify-content-center align-items-center">
-                            <h1 style="font-size: 110px;color: black; ">那你知道</h1>
-                            <p style="font-size: 30px;color: black;">傻眼貓咪嗎？</p>
+                        <div class="box_txt mt-xl-5 mt-0 d-md-flex flex-row d-none">
+                            <div class="box col-12 col-md-6 p-0 px-md-5 py-md-3">
+                                <img src="./img/08.jpg" alt="" class="img06 orangeB">
+                                <h3 class="m-0 text-center my-lg-3 my-2"><span class="d-none d-lg-inline-block mr-lg-1">E-book</span>手繪圖文集</h3>
+                                <p class="m-0 text-center text-justify d-none d-xl-block">設計能與動畫主題對應的四部手繪故事本。</p>
+                            </div>
+                            <div class="box col-12 col-md-6 p-0 px-md-5 py-md-3">
+                                <img src="./img/07.jpg" alt="" class="img06 orangeB">
+                                <h3 class="m-0 text-center my-lg-3 my-2"><span class="d-none d-lg-inline-block mr-lg-1">Animation</span>動畫集</h3>
+                                <p class="m-0 text-center text-justify d-none d-xl-block">分析歸納常見流行語種類並製作情境動畫。
+                                </p>
+                            </div>
+
                         </div>
                     </div>
                 </div>
-                <a style="z-index: 3;" class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a style="z-index: 3;" class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true "></span>
-                    <span class="sr-only ">Next</span>
-                </a>
+                <img src="./img/05.png" alt="" class="img05">
             </div>
-            <!-- <div class="yellowWaterBack"></div> -->
-            <div class="yellowWater"></div>
-        </header>
-
-        <div class="section01" style="overflow: hidden;">
-            <div class="starBackground" id="particles-js">
-            </div>
-
-            <section class="pageBox container main">
-                <div id="page1_1" class="page py-2">
-                    <div class="d-flex align-items-center">
-                        <div class="col-sm-5">
-                            <div class="pic pic01"></div>
-                        </div>
-                        <div class="col-sm-7">
-                            <div class="word pt-5">
-                                <h2 style="color: #ffffff;">每年會有</h2>
-                                <div class="d-inline-flex align-items-end colorY">
-                                    <h1 class="display-2 num9487 font-weight-bold pl-2">948</h1>
-                                    <h1 class="display-5 num9487 font-weight-bold">,</h1>
-                                    <h1 class="display-2 num9487 font-weight-bold">794</h1>
-                                    <h1 class="display-5 num9487 font-weight-bold">,</h1>
-                                    <h1 class="display-2 num9487 font-weight-bold pr-2">666</h1>
+        </div>
+    </section>
+    <section id="content" class="space"></section>
+    <section class="white mb-3">
+        <div class="container d-flex flex-column">
+            <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-paint-brush mr-3" aria-hidden="true"></i>手繪圖文集 E-book </p>
+            <div class="ebookPage col-12">
+                <div class="ebookBox d-flex">
+                    <div class="main clearfix">
+                        <div class="bb-custom-wrapper">
+                            <div id="bb-bookblock" class="bb-bookblock">
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bKVq"><img src="img/ebook1.jpg" alt="image01" /></a>
                                 </div>
-                                <h2 style="color: #ffffff;" class="d-inline-flex ml-1">個</h2>
-                                <h2 style="color: #ffffff;" class="mt-2">流行語產生</h2>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/ciTX"><img src="img/ebook2.jpg" alt="image02" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/cLHx"><img src="img/ebook3.jpg" alt="image03" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bAfn"><img src="img/ebook4.jpg" alt="image04" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/dcbE"><img src="img/ebook5.jpg" alt="image05" /></a>
+                                </div>
+                            </div>
+                            <nav>
+                                <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                                <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                                <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                                <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 p-0 ">
+                        <div class="txtBox">
+                            <div class="d-flex flex-column py-4 px-4 txt1">
+                                <h3 class="m-0 text-center mb-2">表情符號篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">(´･ω･`)</span></h3>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
+                                <div class="wordBox greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">XD</h1>
+                                    </div>
+                                </div>
+                                <div class="wordBox01 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">囧</h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="https://i.imgur.com/J3g6U9K.png" alt="" class="fire">
-                </div>
-
-                <div id="page1_2" class="page page02 py-2">
-                    <div class="d-flex flex-row-reverse align-items-center">
-                        <div class="col-sm-5">
-                            <div class="pic pic02"></div>
+                <div class="ebookBox d-flex ">
+                    <div class="main clearfix">
+                        <div class="bb-custom-wrapper">
+                            <div id="bb-bookblock1" class="bb-bookblock">
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bKVq"><img src="img/ebook1.jpg" alt="image01" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/ciTX"><img src="img/ebook2.jpg" alt="image02" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/cLHx"><img src="img/ebook3.jpg" alt="image03" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bAfn"><img src="img/ebook4.jpg" alt="image04" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/dcbE"><img src="img/ebook5.jpg" alt="image05" /></a>
+                                </div>
+                            </div>
+                            <nav>
+                                <a id="bb-nav-first1" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                                <a id="bb-nav-prev1" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                                <a id="bb-nav-next1" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                                <a id="bb-nav-last1" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                            </nav>
                         </div>
-                        <div style="text-align: center;" class="col-sm-7">
-                            <div class="word pt-5">
-                                <h1 class="display-2 font-weight-bold" style="color: #ffffff;">活到老學到老</h1>
-                                <h4 style="color: #FCA311;">感嘆seafood 讚嘆seafood</h4>
-                                <h3 class="mt-4" style="color: #ffffff;">萬人見證
-                                    <span class="mx-2">|</span> 連
-                                    <span style="color: #FCA311;">「柯P」</span> 都在學的語言
-                                </h3>
+                    </div>
+                    <div class="col-12 col-lg-7 p-0 ">
+                        <div class="txtBox">
+                            <div class="d-flex flex-column py-4 px-4 txt1">
+                                <h3 class="m-0 text-center mb-2">注音符號篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">ㄏㄏ</span></h3>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
+                                <div class="wordBox02 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">ㄏㄏ</h1>
+                                    </div>
+                                </div>
+                                <div class="wordBox03 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">ㄎㄎ</h1>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img src="https://i.imgur.com/Mew8e0y.png" alt="" class="rocket">
-                </div>
-                <div id="page1_3" class="page page03 py-2">
-                    <div class="d-flex flex-row-reverse">
-                        <div class="col-sm-5 ">
-                            <div class="pic pic03"></div>
+                <div class="ebookBox d-flex">
+                    <div class="main clearfix">
+                        <div class="bb-custom-wrapper">
+                            <div id="bb-bookblock2" class="bb-bookblock">
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bKVq"><img src="img/ebook1.jpg" alt="image01" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/ciTX"><img src="img/ebook2.jpg" alt="image02" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/cLHx"><img src="img/ebook3.jpg" alt="image03" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bAfn"><img src="img/ebook4.jpg" alt="image04" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/dcbE"><img src="img/ebook5.jpg" alt="image05" /></a>
+                                </div>
+                            </div>
+                            <nav>
+                                <a id="bb-nav-first2" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                                <a id="bb-nav-prev2" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                                <a id="bb-nav-next2" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                                <a id="bb-nav-last2" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                            </nav>
                         </div>
-                        <div class="col-sm-7 ">
-                            <div class="pt-5 d-flex justify-content-center">
-                                <h1 class="" style="color: #ffffff; ">時下最</h1>
-                                <h2 style="color: #ffffff;" class="d-flex align-items-baseline">
-                                    <span class="font-weight-bold" style="color: #FCA311; font-size:200px; margin-right: -10px;">夯</span> 的教育議題
-                                </h2>
-
+                    </div>
+                    <div class="col-12 col-lg-7 p-0 ">
+                        <div class="txtBox">
+                            <div class="d-flex flex-column py-4 px-4 txt1">
+                                <h3 class="m-0 text-center mb-2">英文與數字篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">8+9</span></h3>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
+                                <div class="wordBox02 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">8+9</h1>
+                                    </div>
+                                </div>
+                                <div class="wordBox03 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">BGM</h1>
+                                    </div>
+                                </div>
                             </div>
-
-                            <div class="whiteBox">
-                                <span style="color: #FCA311; font-size:20px;" class="mx-2">UCCU</span>
-                                <span style="color: #ffffff; font-size:20px;" class="mx-1">x</span>
-                                <span style="color: #FCA311; font-size:20px;" class="mx-2">Orz</span>
-                                <span style="color: #ffffff; font-size:20px;" class="mx-1">x</span>
-                                <span style="color: #FCA311; font-size:20px;" class="mx-2">LKK</span>
-                                <span style="color: #ffffff; font-size:20px;" class="mx-1">x</span>
-                                <span style="color: #FCA311; font-size:20px;" class="mx-2">DISS</span>
-                                <span style="color: #ffffff; font-size:20px;" class="mx-2">聯合推薦</span>
-                            </div>
-
                         </div>
                     </div>
                 </div>
+                <div class="ebookBox d-flex ">
+                    <div class="main clearfix">
+                        <div class="bb-custom-wrapper">
+                            <div id="bb-bookblock3" class="bb-bookblock">
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bKVq"><img src="img/ebook1.jpg" alt="image01" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/ciTX"><img src="img/ebook2.jpg" alt="image02" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/cLHx"><img src="img/ebook3.jpg" alt="image03" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/bAfn"><img src="img/ebook4.jpg" alt="image04" /></a>
+                                </div>
+                                <div class="bb-item">
+                                    <a href="http://drbl.in/dcbE"><img src="img/ebook5.jpg" alt="image05" /></a>
+                                </div>
+                            </div>
+                            <nav>
+                                <a id="bb-nav-first3" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
+                                <a id="bb-nav-prev3" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
+                                <a id="bb-nav-next3" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
+                                <a id="bb-nav-last3" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-7 p-0 ">
+                        <div class="txtBox">
+                            <div class="d-flex flex-column py-4 px-4 txt1">
+                                <h3 class="m-0 text-center mb-2">特殊詞囊篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">大大</span></h3>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
+                                <div class="wordBox02 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">大大</h1>
+                                    </div>
+                                </div>
+                                <div class="wordBox03 greenW">
+                                    <div class="d-inline-flex flex-column">
+                                        <h1 class="m-0 p-0">嘖嘖</h1>
 
-                <div>
-                    <img src="https://i.imgur.com/m7vwQZ3.png" alt="" class="paint">
-                </div>
-                <div id="page1_4" class="page page04 py-2">
-                    <div class="d-flex justify-content-center">
-                        <h1 class="display-3 font-weight-bold py-5" style="color: #ffffff; text-align:center; z-index: 2;">但最可怕的莫過於</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </section>
-
-            <div class="pageImg">
-                <img src="./img/pageImg.png" alt="">
+            </div>
+            <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-video-camera mr-3" aria-hidden="true"></i>動畫集 Animation </p>
+            <div class="animationPage d-flex flex-wrap col-12 p-0">
+                <div class="videoBox mt-3 col-6">
+                    <div class="container p-2 m-0">
+                        <div data-type="vimeo" data-video-id="243619686"></div>
+                    </div>
+                    <div class="container1 p-3">
+                        <h3 class="m-0 text-center mb-2">表情符號篇</h3>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                        </p>
+                    </div>
+                </div>
+                <div class="videoBox mt-3 col-6">
+                    <div class="container p-2 m-0">
+                        <div data-type="vimeo" data-video-id="243619821"></div>
+                    </div>
+                    <div class="container1 p-3">
+                        <h3 class="m-0 text-center mb-2">注音符號篇</h3>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                        </p>
+                    </div>
+                </div>
+                <div class="videoBox mt-3 col-6">
+                    <div class="container p-2 m-0">
+                        <div data-type="vimeo" data-video-id="243619686"></div>
+                    </div>
+                    <div class="container1 p-3">
+                        <h3 class="m-0 text-center mb-2">英文與數字篇</h3>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                        </p>
+                    </div>
+                </div>
+                <div class="videoBox mt-3 col-6">
+                    <div class="container p-2 m-0">
+                        <div data-type="vimeo" data-video-id="243619686"></div>
+                    </div>
+                    <div class="container1 p-3">
+                        <h3 class="m-0 text-center mb-2">特殊詞囊篇</h3>
+                        <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
-
-        <footer class="colorY d-flex flex-column justify-content-center align-items-center">
-            <div class="d-flex flex-column justify-content-center align-items-center">
-                <h1 style="font-size: 110px; letter-spacing: 2px;">直到現在</h1>
-                <p style="font-size: 30px; letter-spacing: 2px; border-radius: 10px; box-shadow:4px 4px 12px -2px rgba(20%,20%,40%,0.5);" class="mt-3">依然有不想<span>嘗試了解流行用語</span>的家長</span>
-            </div>
-            <div class="line"></div>
-            <a href="https://lloyd3126.github.io/talkingabout/main.html">
-                <div class="btn mt-3 colorB">我覺得不行 Go</div>
-            </a>
-            <div class="space mt-5 colorY"></div>
-
-        </footer>
-
-        <!-- scripts -->
-        <script src="js/particles.js "></script>
-        <script src="js/app.js "></script>
-
-        <!-- stats.js -->
-        <script src="js/lib/stats.js "></script>
-
-        <!-- CDN -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js " integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4 " crossorigin="anonymous "></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js " integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1 " crossorigin="anonymous "></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/jquery.onepage-scroll.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/onepage-scroll/1.3.1/onepage-scroll.min.css"></script>
-        <script type="text/javascript">
-            var s = skrollr.init(); //初始化
-        </script>
+    </section>
+    <section id="about" class="section white">3</section>
 
 
-    </body>
+
+
+    <!-- bootstrap4.js / jQery -->
+    <script type="text/javascript " src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    <!-- bookblock -->
+    <script type="text/javascript " src="js/jquerypp.custom.js"></script>
+    <script type="text/javascript " src="js/jquery.bookblock.js"></script>
+    <script>
+        (function() {
+            // This is the bare minimum JavaScript. You can opt to pass no arguments to setup.
+            // e.g. just plyr.setup(); and leave it at that if you have no need for events
+            var instances = plyr.setup({
+                // Output to console
+                debug: true
+            });
+
+            // Get an element
+            function get(selector) {
+                return document.querySelector(selector);
+            }
+
+            // Custom event handler (just for demo)
+            function on(element, type, callback) {
+                if (!(element instanceof HTMLElement)) {
+                    element = get(element);
+                }
+                element.addEventListener(type, callback, false);
+            }
+
+            // Loop through each instance
+            instances.forEach(function(instance) {
+                // Play
+                on('.js-play', 'click', function() {
+                    instance.play();
+                });
+
+                // Pause
+                on('.js-pause', 'click', function() {
+                    instance.pause();
+                });
+
+                // Stop
+                on('.js-stop', 'click', function() {
+                    instance.stop();
+                });
+
+                // Rewind
+                on('.js-rewind', 'click', function() {
+                    instance.rewind();
+                });
+
+                // Forward
+                on('.js-forward', 'click', function() {
+                    instance.forward();
+                });
+            });
+        })();
+    </script>
+    <script>
+        var Page = (function() {
+
+            var config = {
+                    $bookBlock: $('#bb-bookblock'),
+                    $navNext: $('#bb-nav-next'),
+                    $navPrev: $('#bb-nav-prev'),
+                    $navFirst: $('#bb-nav-first'),
+                    $navLast: $('#bb-nav-last'),
+                    $bookBlock1: $('#bb-bookblock1'),
+                    $navNext1: $('#bb-nav-next1'),
+                    $navPrev1: $('#bb-nav-prev1'),
+                    $navFirst1: $('#bb-nav-first1'),
+                    $navLast1: $('#bb-nav-last1'),
+                    $bookBlock2: $('#bb-bookblock2'),
+                    $navNext2: $('#bb-nav-next2'),
+                    $navPrev2: $('#bb-nav-prev2'),
+                    $navFirst2: $('#bb-nav-first2'),
+                    $navLast2: $('#bb-nav-last2'),
+                    $bookBlock3: $('#bb-bookblock3'),
+                    $navNext3: $('#bb-nav-next3'),
+                    $navPrev3: $('#bb-nav-prev3'),
+                    $navFirst3: $('#bb-nav-first3'),
+                    $navLast3: $('#bb-nav-last3')
+                },
+                init = function() {
+                    config.$bookBlock.bookblock({
+                        speed: 800,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.7
+                    });
+                    config.$bookBlock1.bookblock({
+                        speed: 800,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.7
+                    });
+                    config.$bookBlock2.bookblock({
+                        speed: 800,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.7
+                    });
+                    config.$bookBlock3.bookblock({
+                        speed: 800,
+                        shadowSides: 0.8,
+                        shadowFlip: 0.7
+                    });
+                    initEvents();
+                },
+                initEvents = function() {
+
+                    var $slides = config.$bookBlock.children();
+                    var $slides1 = config.$bookBlock1.children();
+                    var $slides2 = config.$bookBlock2.children();
+                    var $slides3 = config.$bookBlock3.children();
+
+                    // add navigation events 
+                    config.$navNext.on('click touchstart', function() {
+                        config.$bookBlock.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev.on('click touchstart', function() {
+                        config.$bookBlock.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst.on('click touchstart', function() {
+                        config.$bookBlock.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast.on('click touchstart', function() {
+                        config.$bookBlock.bookblock('last');
+                        return false;
+                    });
+
+                    // add navigation events 1
+                    config.$navNext1.on('click touchstart', function() {
+                        config.$bookBlock1.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev1.on('click touchstart', function() {
+                        config.$bookBlock1.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst1.on('click touchstart', function() {
+                        config.$bookBlock1.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast1.on('click touchstart', function() {
+                        config.$bookBlock1.bookblock('last');
+                        return false;
+                    });
+
+                    // add navigation events 2
+                    config.$navNext2.on('click touchstart', function() {
+                        config.$bookBlock2.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev2.on('click touchstart', function() {
+                        config.$bookBlock2.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst2.on('click touchstart', function() {
+                        config.$bookBlock2.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast2.on('click touchstart', function() {
+                        config.$bookBlock2.bookblock('last');
+                        return false;
+                    });
+
+                    // add navigation events 3
+                    config.$navNext3.on('click touchstart', function() {
+                        config.$bookBlock3.bookblock('next');
+                        return false;
+                    });
+
+                    config.$navPrev3.on('click touchstart', function() {
+                        config.$bookBlock3.bookblock('prev');
+                        return false;
+                    });
+
+                    config.$navFirst3.on('click touchstart', function() {
+                        config.$bookBlock3.bookblock('first');
+                        return false;
+                    });
+
+                    config.$navLast3.on('click touchstart', function() {
+                        config.$bookBlock3.bookblock('last');
+                        return false;
+                    });
+
+
+                    // add swipe events
+                    $slides.on({
+                        'swipeleft': function(event) {
+                            config.$bookBlock.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            config.$bookBlock.bookblock('prev');
+                            return false;
+                        },
+                        'swipeleft': function(event) {
+                            config.$bookBlock1.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            config.$bookBlock1.bookblock('prev');
+                            return false;
+                        },
+                        'swipeleft': function(event) {
+                            config.$bookBlock2.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            config.$bookBlock2.bookblock('prev');
+                            return false;
+                        },
+                        'swipeleft': function(event) {
+                            config.$bookBlock3.bookblock('next');
+                            return false;
+                        },
+                        'swiperight': function(event) {
+                            config.$bookBlock3.bookblock('prev');
+                            return false;
+                        }
+                    });
+
+                    // add keyboard events
+                    $(document).keydown(function(e) {
+                        var keyCode = e.keyCode || e.which,
+                            arrow = {
+                                left: 37,
+                                up: 38,
+                                right: 39,
+                                down: 40
+                            };
+
+                        switch (keyCode) {
+                            case arrow.left:
+                                config.$bookBlock.bookblock('prev');
+                                config.$bookBlock1.bookblock('prev');
+                                config.$bookBlock2.bookblock('prev');
+                                config.$bookBlock3.bookblock('prev');
+                                break;
+                            case arrow.right:
+                                config.$bookBlock.bookblock('next');
+                                config.$bookBlock1.bookblock('next');
+                                config.$bookBlock2.bookblock('next');
+                                config.$bookBlock3.bookblock('next');
+                                break;
+                        }
+                    });
+                };
+
+            return {
+                init: init
+            };
+
+        })();
+    </script>
+    <script>
+        Page.init();
+    </script>
+    <script>
+        $(function() {
+
+
+            $('.navA').hover(function() {
+                $(this).css({
+
+                    "text-decoration": "none",
+
+                });
+            }, function() {
+                $(this).css({
+
+                    "text-decoration": "none",
+                });
+            });
+
+
+            $('#btn_header').click(function() {
+
+                $('html,body').animate({
+                    scrollTop: $('#header').offset().top
+                }, 800);
+
+            });
+
+
+            $('#btn_objective').click(function() {
+                $('.line').removeClass("m01 m02 m03");
+                $('.navA').css({
+                    "color": "#86C166",
+                });
+                $('html,body').animate({
+                    scrollTop: $('#objective').offset().top
+                }, 800);
+                $(this).css({
+                    "color": "#FC9F4D",
+                    "text-decoration": "none",
+                });
+                $('.line').addClass("m01");
+
+            });
+            $('#btn_content').click(function() {
+                $('.line').removeClass("m01 m02 m03");
+                $('.navA').css({
+                    "color": "#86C166",
+                });
+                $('html,body').animate({
+                    scrollTop: $('#content').offset().top
+                }, 800);
+                $(this).css({
+                    "color": "#FC9F4D",
+                    "text-decoration": "none",
+                });
+                $('.line').addClass("m02");
+
+            });
+            $('#btn_about').click(function() {
+                $('.line').removeClass("m01 m02 m03");
+                $('.navA').css({
+                    "color": "#86C166",
+                });
+                $('html,body').animate({
+                    scrollTop: $('#about').offset().top
+                }, 800);
+                $(this).css({
+                    "color": "#FC9F4D",
+                    "text-decoration": "none",
+                });
+                $('.line').addClass("m03");
+
+            });
+
+
+        });
+    </script>
+
+
+</body>
 
 </html>
