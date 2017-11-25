@@ -514,6 +514,19 @@ header p {
         color: white;
         font-size: 16px;
     }
+    .animationPage .container {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
+    }
+    .animationPage .container1 {
+        max-width: 800px;
+        height: auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
+    }
 }
 
 
@@ -546,6 +559,19 @@ header p {
         font-weight: 300;
         color: #2c2c2c;
         font-size: 14px;
+    }
+    .animationPage .container {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
+    }
+    .animationPage .container1 {
+        max-width: 800px;
+        height: auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
     }
 }
 
@@ -583,12 +609,44 @@ header p {
     .box_txt h3 {
         font-size: 16px;
     }
+    .animationPage .container {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
+    }
+    .animationPage .container1 {
+        max-width: 800px;
+        height: auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
+    }
+    .main {
+        margin: 0 auto;
+        padding: 0em;
+        padding-left: 0em;
+    }
 }
 
 
 /* Large devices (desktops, 992px and up) */
 
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .animationPage .container {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
+    }
+    .animationPage .container1 {
+        max-width: 800px;
+        height: auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
+    }
+}
 
 
 /* Extra large devices (large desktops, 1200px and up) */
@@ -600,5 +658,18 @@ header p {
         top: 100px;
         left: 50%;
         transform: translateX(-50%);
+    }
+    .animationPage .container {
+        max-width: 800px;
+        height: auto;
+        margin: 0 auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
+    }
+    .animationPage .container1 {
+        max-width: 800px;
+        height: auto;
+        box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
+        background-color: #fff;
     }
 }
