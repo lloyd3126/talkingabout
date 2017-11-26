@@ -27,13 +27,27 @@
     <script src="//vjs.zencdn.net/5.19/video.min.js"></script>
     <script src="js/modernizr.custom.js"></script>
     <script src="https://cdn.plyr.io/2.0.7/plyr.js"></script>
+    <style>
+        @media (max-width: 575px) {
+            .plyr {
+                border-radius: 0;
+            }
+            .main,
+            .container>header {
+                margin: 0 auto;
+                padding: 2em;
+                padding-left: 0em;
+                padding-right: 0em;
+            }
+        }
+    </style>
 
 
 </head>
 
-<body class="white">
+<body class="mainColor">
 
-    <div class="navbar m-0 fixed-top p-0 py-lg-3 white" style="top: 20px; left: 50%; transform: translateX(-50%);">
+    <div class="navbar m-0 fixed-top p-0 py-lg-3 secondColor" style="top: 20px; left: 50%; transform: translateX(-50%);">
         <div class="container d-flex">
             <div class="cursor col-12 col-lg-4 logo d-flex greenW font-weight-normal justify-content-lg-start justify-content-center align-items-center">
                 <a id="btn_header" href="#header" class="logo">
@@ -44,9 +58,9 @@
             </div>
             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-lg-end align-items-center align-items-lg-end p-0 navWord mt-1 m-lg-0 pb-1 pb-lg-0">
                 <div>
-                    <a id="btn_objective" href="#objective" class="navA d-inline-block mx-2 mx-lg-3 greenW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-rocket mr-1" aria-hidden="true"></i>專題目標</a>
-                    <a id="btn_content" href="#content" class="navA d-inline-block mx-2 mx-lg-3 greenW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-file mr-1" aria-hidden="true"></i>作品內容</a>
-                    <a id="btn_about" href="#about" class="navA d-inline-block mx-2 mx-lg-3 greenW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-address-card-o mr-1" aria-hidden="true"></i>關於我們</a>
+                    <a id="btn_objective" href="#objective" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-rocket mr-1" aria-hidden="true"></i>專題目標</a>
+                    <a id="btn_content" href="#content" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-file mr-1" aria-hidden="true"></i>作品內容</a>
+                    <a id="btn_about" href="#about" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-address-card-o mr-1" aria-hidden="true"></i>關於我們</a>
                 </div>
                 <div class="lineBox">
                     <div class="line d-none d-lg-block"></div>
@@ -58,39 +72,39 @@
     <header id="header" class="d-flex justify-content-center align-items-center">
         <div class=" d-flex flex-column align-items-center">
             <img src="./img/04.png" alt="" class="col-8 col-sm-4">
-            <p class="mt-4 d-none d-sm-block">當流行語在大手與小手間搭起溝通的橋樑</p>
-            <p class="mt-1 d-none d-sm-block">那<span class="greenW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
-            <p class="mt-4 px-5 d-block d-sm-none text-justify text-center">當流行語在大手與小手間搭起溝通的橋樑，那<span class="greenW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
+            <p class="mt-4 d-none d-sm-block secondColorW">當流行語在大手與小手間搭起溝通的橋樑</p>
+            <p class="mt-1 d-none d-sm-block secondColorW">那<span class="thirdColorW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
+            <p class="mt-4 px-5 d-block d-sm-none text-justify text-center secondColorW">當流行語在大手與小手間搭起溝通的橋樑，那<span class="thirdColorW">「偷聽」</span>就能成為翻轉世代新關係的絕佳時機</p>
         </div>
         <div class="nav1">
-            <i class="fa fa-angle-double-down icon whiteW" aria-hidden="true"></i>
+            <i class="fa fa-angle-double-down icon thirdColorW" aria-hidden="true"></i>
         </div>
     </header>
 
-    <section id="objective" class="section white d-flex justify-content-center align-items-center">
+    <section id="objective" class="section mainColor d-flex justify-content-center align-items-center">
         <div class="d-flex intro justify-content-center align-items-center">
             <div class="img01 col-12">
-                <div class="wordBox greenW">
+                <div class="wordBox thirdColorW">
                     <h1 class="m-0 p-0">About</h1>
                     <h2 class="m-0 p-0">關於計畫</h2>
                 </div>
             </div>
         </div>
     </section>
-    <section class="white sec mb-3">
+    <section class="mainColor sec mb-3 secondColorW">
         <div class="container d-flex justify-content-center mt-sm-4 mt-0">
             <div class="col-12 col-lg-10">
-                <p class="m-0 mb-3 d-none d-xl-block">每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做「<span class="greenW">流行語</span>」。 </p>
+                <p class="m-0 mb-3 d-none d-xl-block">每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做<span class="thirdColorW">「流行語」</span>。 </p>
                 <p class="m-0 mb-3 d-none d-xl-block">拜科技快速進步之賜，那些本應隨年齡增長埋入心田的市井用語開始衝擊著既有文化。 </p>
                 <p class="m-0 mb-3 d-none d-xl-block">於是爆炸般成長的流行用語，挾帶著輿論與隔閡席捲而來。 </p>
-                <p class="m-0 mb-3 d-block d-xl-none text-justify"><b class="none">空空</b>每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做「<span class="greenW">流行語</span>」。拜科技快速進步之賜，那些本應隨年齡增長埋入心田的市井用語開始衝擊著既有文化。於是爆炸般成長的流行用語，挾帶著輿論與隔閡席捲而來。</p>
+                <p class="m-0 mb-3 d-block d-xl-none text-justify"><b class="none">空空</b>每個時代都有屬於自己的語言，而那些被當代廣為流傳的言語我們稱做<span class="thirdColorW">「流行語」</span>。拜科技快速進步之賜，那些本應隨年齡增長埋入心田的市井用語開始衝擊著既有文化。於是爆炸般成長的流行用語，挾帶著輿論與隔閡席捲而來。</p>
             </div>
         </div>
         <div class="container d-flex justify-content-center mt-5">
             <div class="col-12 col-lg-10 paper">
                 <div class="wordBox">
                     <div class="part01 d-flex flex-column align-items-center">
-                        <h3 class="m-0 text-center mb-3 "><span class="d-none d-sm-inline-block mr-sm-2">More About</span>關於偷聽計畫</h3>
+                        <h3 class="m-0 text-center mb-3 thirdColorW"><span class="d-none d-sm-inline-block mr-sm-2">More About</span>關於偷聽計畫</h3>
                         <p class="m-0 text-center text-justify d-none d-md-block">- 有跟上潮流的人們，總是得意的自顧自說著難以了解的話語。</p>
                         <p class="m-0 text-center text-justify d-none d-md-block">- 沒跟上潮流的人們，無論自願與否目前都已被時代拋在後頭。</p>
                         <p class="m-0 mb-sm-3 mb-2 d-sm-block d-none d-md-none text-justify"><b class="none">空空</b>有跟上潮流的人們，總是得意的自顧自說著難以了解的話語。沒跟上潮流的人們，無論自願與否目前都已被時代拋在後頭。</p>
@@ -121,10 +135,10 @@
         </div>
     </section>
     <section id="content" class="space"></section>
-    <section class="white mb-3">
+    <section class="mainColor mb-3">
         <div class="container d-flex flex-column">
-            <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-paint-brush mr-3" aria-hidden="true"></i>手繪圖文集 E-book </p>
-            <div class="ebookPage col-12 d-flex d-xl-block flex-wrap flex-xl-nowrap">
+            <p class="col-12 m-0 text-left mt-5 fz40"><i class="fa fa-paint-brush mr-3" aria-hidden="true"></i>手繪圖文集 E-book </p>
+            <div class="ebookPage col-12 d-flex d-xl-block flex-sm-wrap flex-xl-nowrap flex-column justify-content-center align-items-center">
                 <div class="ebookBox d-flex col-xl-12 col-lg-6">
                     <div class="main clearfix">
                         <div class="bb-custom-wrapper">
@@ -146,10 +160,10 @@
                                 </div>
                             </div>
                             <nav>
-                                <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
-                                <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
-                                <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
-                                <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                                <a id="bb-nav-first" href="#" class="bb-custom-icon bb-custom-icon-first" style="background-color: #F2B48F; color: #284259; ">First page</a>
+                                <a id="bb-nav-prev" href="#" class="bb-custom-icon bb-custom-icon-arrow-left" style="background-color: #F2B48F; color: #284259; ">Previous</a>
+                                <a id="bb-nav-next" href="#" class="bb-custom-icon bb-custom-icon-arrow-right" style="background-color: #F2B48F; color: #284259; ">Next</a>
+                                <a id="bb-nav-last" href="#" class="bb-custom-icon bb-custom-icon-last" style="background-color: #F2B48F; color: #284259; ">Last page</a>
                             </nav>
                         </div>
                     </div>
@@ -158,8 +172,7 @@
                             <div class="d-flex flex-column py-4 px-4 txt1">
                                 <h3 class="m-0 text-center mb-2">表情符號篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">(´･ω･`)</span></h3>
                                 <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
-                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
-                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，使用者通常將「文字轉90度角」來模擬人的臉部表情。傳入亞洲之後，有人打破轉90度角的模擬表情規則，開發出能讓閱讀者不再側著頭的文字表情。近年來因為網路的蓬勃發展，也衍伸出更多且更多元的表情符號。</p>
                                 <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
                                 <div class="wordBox greenW">
                                     <div class="d-inline-flex flex-column">
@@ -175,7 +188,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="ebookBox d-flex col-xl-12 col-lg-6 col-12">
+                <div class="ebookBox d-flex col-xl-12 col-lg-6 col-12 justify-content-center">
                     <div class="main clearfix">
                         <div class="bb-custom-wrapper">
                             <div id="bb-bookblock1" class="bb-bookblock">
@@ -202,10 +215,10 @@
                                 </div>
                             </div>
                             <nav>
-                                <a id="bb-nav-first1" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
-                                <a id="bb-nav-prev1" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
-                                <a id="bb-nav-next1" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
-                                <a id="bb-nav-last1" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                                <a id="bb-nav-first1" href="#" class="bb-custom-icon bb-custom-icon-first" style="background-color: #F2B48F; color: #284259; ">First page</a>
+                                <a id="bb-nav-prev1" href="#" class="bb-custom-icon bb-custom-icon-arrow-left" style="background-color: #F2B48F; color: #284259; ">Previous</a>
+                                <a id="bb-nav-next1" href="#" class="bb-custom-icon bb-custom-icon-arrow-right" style="background-color: #F2B48F; color: #284259; ">Next</a>
+                                <a id="bb-nav-last1" href="#" class="bb-custom-icon bb-custom-icon-last" style="background-color: #F2B48F; color: #284259; ">Last page</a>
                             </nav>
                         </div>
                     </div>
@@ -213,9 +226,8 @@
                         <div class="txtBox">
                             <div class="d-flex flex-column py-4 px-4 txt1">
                                 <h3 class="m-0 text-center mb-2">注音符號篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">ㄏㄏ</span></h3>
-                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
-                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
-                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">讓注音符號，不只是注音符號！ㄎㄎ</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：一種使用注音符號的書寫方式，將句子中的字用「單一的注音符號」呈現。使用者使用注音文之原因主要為節省時間，但有時因為只出現單一注音符號，在閱讀上對於非使用者而言，內容較難以理解，可能需要充分地思考，才能掌握文章內容。 </p>
                                 <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
                                 <div class="wordBox02 greenW">
                                     <div class="d-inline-flex flex-column">
@@ -258,10 +270,10 @@
                                 </div>
                             </div>
                             <nav>
-                                <a id="bb-nav-first2" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
-                                <a id="bb-nav-prev2" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
-                                <a id="bb-nav-next2" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
-                                <a id="bb-nav-last2" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                                <a id="bb-nav-first2" href="#" class="bb-custom-icon bb-custom-icon-first" style="background-color: #F2B48F; color: #284259; ">First page</a>
+                                <a id="bb-nav-prev2" href="#" class="bb-custom-icon bb-custom-icon-arrow-left" style="background-color: #F2B48F; color: #284259; ">Previous</a>
+                                <a id="bb-nav-next2" href="#" class="bb-custom-icon bb-custom-icon-arrow-right" style="background-color: #F2B48F; color: #284259; ">Next</a>
+                                <a id="bb-nav-last2" href="#" class="bb-custom-icon bb-custom-icon-last" style="background-color: #F2B48F; color: #284259; ">Last page</a>
                             </nav>
                         </div>
                     </div>
@@ -269,8 +281,8 @@
                         <div class="txtBox">
                             <div class="d-flex flex-column py-4 px-4 txt1">
                                 <h3 class="m-0 text-center mb-2">英文與數字篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">8+9</span></h3>
-                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
-                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">66666的語言</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用英文字或數字的表達方式。使用者使用之主要原因為節省時間。有些以數字表達的流行用語取自「諧音」，例如 8+9； 有些以英文表達的流行用語部分為英文字的縮寫，例如 GOOD GAME 縮寫為「 GG 」，其背後的含義來源非常多元。
                                 </p>
                                 <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
                                 <div class="wordBox02 greenW">
@@ -308,10 +320,10 @@
                                 </div>
                             </div>
                             <nav>
-                                <a id="bb-nav-first3" href="#" class="bb-custom-icon bb-custom-icon-first">First page</a>
-                                <a id="bb-nav-prev3" href="#" class="bb-custom-icon bb-custom-icon-arrow-left">Previous</a>
-                                <a id="bb-nav-next3" href="#" class="bb-custom-icon bb-custom-icon-arrow-right">Next</a>
-                                <a id="bb-nav-last3" href="#" class="bb-custom-icon bb-custom-icon-last">Last page</a>
+                                <a id="bb-nav-first3" href="#" class="bb-custom-icon bb-custom-icon-first" style="background-color: #F2B48F; color: #284259; ">First page</a>
+                                <a id="bb-nav-prev3" href="#" class="bb-custom-icon bb-custom-icon-arrow-left" style="background-color: #F2B48F; color: #284259; ">Previous</a>
+                                <a id="bb-nav-next3" href="#" class="bb-custom-icon bb-custom-icon-arrow-right" style="background-color: #F2B48F; color: #284259; ">Next</a>
+                                <a id="bb-nav-last3" href="#" class="bb-custom-icon bb-custom-icon-last" style="background-color: #F2B48F; color: #284259; ">Last page</a>
                             </nav>
                         </div>
                     </div>
@@ -319,9 +331,8 @@
                         <div class="txtBox">
                             <div class="d-flex flex-column py-4 px-4 txt1">
                                 <h3 class="m-0 text-center mb-2">特殊詞囊篇<span class="d-none d-sm-inline-block ml-sm-2" style="font-size: 20px;">大大</span></h3>
-                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
-                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
-                                </p>
+                                <p class="m-0 text-justify mt-2 mt-lg-0 longText">語言的天馬行空</p>
+                                <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種特殊的語言表達方式。有些流行語為文字的縮寫，例如：大哥大姐所寫為「大大」； 有些來自字詞的諧音，例如：將生氣寫成「森77」或是「7pupu」（台語諧音），在某個層面來說，這些用語帶有可愛感，同時也具有化解尷尬的用途。 </p>
                                 <p class="m-0 text-justify mt-2 mt-lg-2 longText">案例： </p>
                                 <div class="wordBox02 greenW">
                                     <div class="d-inline-flex flex-column">
@@ -342,18 +353,17 @@
             <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-video-camera mr-3" aria-hidden="true"></i>動畫集 Animation </p>
             <div class="animationPage d-flex flex-xl-wrap flex-column flex-xl-row col-12 p-0 ">
                 <div class="videoBox mt-xl-3 my-4 col-xl-6 col-12 d-flex d-xl-block flex-column align-items-center">
-                    <div class="container p-2 m-0">
+                    <div class="container p-sm-2 p-0 m-0">
                         <div data-type="vimeo" data-video-id="243619686"></div>
                     </div>
                     <div class="container1 p-xl-3 px-3 pb-3">
                         <h3 class="m-0 text-center mb-2">表情符號篇</h3>
                         <p class="m-0 text-justify mt-2 mt-lg-0 longText">相似詞：顏文字、Emoticon、かおもじ</p>
-                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：是一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，因為是使用的是ASCII中可顯示之字元，因此使用者通常將文字轉90度角來模擬人的臉部表情。傳入亞洲國家之後，有人打破轉90度角的模擬表情規則，開發能讓閱讀時不再側著頭的表情符號。近年來開始出現除了出現臉部之外的各體身體表情，表達題材也更加多元。
-                        </p>
+                        <p class="m-0 text-justify mt-2 mt-lg-2 longText">釋義：一種使用文字與符號的組合來傳達心情的書寫方式。表情符號剛開始流行時，使用者通常將「文字轉90度角」來模擬人的臉部表情。傳入亞洲之後，有人打破轉90度角的模擬表情規則，開發出能讓閱讀者不再側著頭的文字表情。近年來因為網路的蓬勃發展，也衍伸出更多且更多元的表情符號。</p>
                     </div>
                 </div>
                 <div class="videoBox mt-xl-3 my-4 col-xl-6 col-12 d-flex d-xl-block flex-column align-items-center">
-                    <div class="container p-2 m-0">
+                    <div class="container p-sm-2 p-0 m-0">
                         <div data-type="vimeo" data-video-id="243619821"></div>
                     </div>
                     <div class="container1 p-xl-3 px-3 pb-3">
@@ -364,7 +374,7 @@
                     </div>
                 </div>
                 <div class="videoBox mt-xl-3 my-4 col-xl-6 col-12 d-flex d-xl-block flex-column align-items-center">
-                    <div class="container p-2 m-0">
+                    <div class="container p-sm-2 p-0 m-0">
                         <div data-type="vimeo" data-video-id="243821001"></div>
                     </div>
                     <div class="container1 p-xl-3 px-3 pb-3">
@@ -375,7 +385,7 @@
                     </div>
                 </div>
                 <div class="videoBox mt-xl-3 my-4 col-xl-6 col-12 d-flex d-xl-block flex-column align-items-center">
-                    <div class="container p-2 m-0">
+                    <div class="container p-sm-2 p-0 m-0">
                         <div data-type="vimeo" data-video-id="243619686"></div>
                     </div>
                     <div class="container1 p-xl-3 px-3 pb-3">
@@ -388,7 +398,7 @@
             </div>
         </div>
     </section>
-    <section id="about" class="section white">3</section>
+    <section id="about" class="section mainColor">3</section>
 
 
 
@@ -701,13 +711,13 @@
             $('#btn_objective').click(function() {
                 $('.line').removeClass("m01 m02 m03");
                 $('.navA').css({
-                    "color": "#86C166",
+                    "color": "#284259",
                 });
                 $('html,body').animate({
                     scrollTop: $('#objective').offset().top
                 }, 800);
                 $(this).css({
-                    "color": "#FC9F4D",
+                    "color": "#FFBB66",
                     "text-decoration": "none",
                 });
                 $('.line').addClass("m01");
@@ -716,13 +726,13 @@
             $('#btn_content').click(function() {
                 $('.line').removeClass("m01 m02 m03");
                 $('.navA').css({
-                    "color": "#86C166",
+                    "color": "#284259",
                 });
                 $('html,body').animate({
                     scrollTop: $('#content').offset().top
                 }, 800);
                 $(this).css({
-                    "color": "#FC9F4D",
+                    "color": "#FFBB66",
                     "text-decoration": "none",
                 });
                 $('.line').addClass("m02");
@@ -731,13 +741,13 @@
             $('#btn_about').click(function() {
                 $('.line').removeClass("m01 m02 m03");
                 $('.navA').css({
-                    "color": "#86C166",
+                    "color": "#284259",
                 });
                 $('html,body').animate({
                     scrollTop: $('#about').offset().top
                 }, 800);
                 $(this).css({
-                    "color": "#FC9F4D",
+                    "color": "#FFBB66",
                     "text-decoration": "none",
                 });
                 $('.line').addClass("m03");

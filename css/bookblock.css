@@ -187,3 +187,24 @@
     display: block;
     position: relative;
 }
+
+@media (max-width: 575px) {
+    .bb-bookblock {
+        width: 280px;
+        height: 280px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 100;
+        -webkit-perspective: 1300px;
+        perspective: 1300px;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+    }
+    .bb-vertical {
+        margin: 0;
+    }
+    a img {
+        width: 100%;
+        height: auto;
+    }
+}
