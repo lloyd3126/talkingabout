@@ -52,11 +52,11 @@
             <div class="cursor col-12 col-lg-4 logo d-flex greenW font-weight-normal justify-content-lg-start justify-content-center align-items-center">
                 <a id="btn_header" href="#header" class="logo">
                     <img src="./img/03.png" alt="" class=" d-none d-lg-flex">
-                    <img src="./img/02.png" alt="" class=" d-lg-none d-flex mt-2">
+                    <img src="./img/02.png" alt="" class=" d-lg-none d-flex my-2">
                 </a>
                 <!-- <p class=" m-0 d-none d-lg-flex">偷聽兒報</p> -->
             </div>
-            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-lg-end align-items-center align-items-lg-end p-0 navWord mt-1 m-lg-0 pb-1 pb-lg-0">
+            <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-lg-end align-items-center align-items-lg-end p-0 navWord mt-2 m-lg-0 pb-1 pb-lg-0">
                 <div>
                     <a id="btn_objective" href="#objective" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-rocket mr-1" aria-hidden="true"></i>專題目標</a>
                     <a id="btn_content" href="#content" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-file mr-1" aria-hidden="true"></i>作品內容</a>
@@ -700,7 +700,9 @@
 
 
             $('#btn_header').click(function() {
-
+                $('.navA').css({
+                    "color": "#284259",
+                });
                 $('html,body').animate({
                     scrollTop: $('#header').offset().top
                 }, 800);
@@ -717,7 +719,7 @@
                     scrollTop: $('#objective').offset().top
                 }, 800);
                 $(this).css({
-                    "color": "#FFBB66",
+                    "color": "#F2B48F",
                     "text-decoration": "none",
                 });
                 $('.line').addClass("m01");
@@ -732,7 +734,7 @@
                     scrollTop: $('#content').offset().top
                 }, 800);
                 $(this).css({
-                    "color": "#FFBB66",
+                    "color": "#F2B48F",
                     "text-decoration": "none",
                 });
                 $('.line').addClass("m02");
@@ -747,7 +749,7 @@
                     scrollTop: $('#about').offset().top
                 }, 800);
                 $(this).css({
-                    "color": "#FFBB66",
+                    "color": "#F2B48F",
                     "text-decoration": "none",
                 });
                 $('.line').addClass("m03");
