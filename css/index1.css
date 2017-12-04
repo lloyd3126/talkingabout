@@ -8,11 +8,11 @@
     }
     
     .mainColor {
-        background-color: #284259;
+        background-color: #14213D;
     }
     
     .mainColorW {
-        color: #284259;
+        color: #14213D;
     }
     
     .secondColor2 {
@@ -32,19 +32,19 @@
     }
     
     .thirdColor {
-        background-color: #F2B48F;
+        background-color: #FCA311;
     }
     
     .thirdColorW {
-        color: #F2B48F;
+        color: #FCA311;
     }
     
     .fourthColor {
-        background-color: #FCB366;
+        background-color: #FCA311;
     }
     
     .fourthColorW {
-        color: #FCB366;
+        color: #FCA311;
     }
     
     .fiveColor {
@@ -130,7 +130,7 @@
     }
     
     .navA:hover {
-        color: #284259;
+        color: #14213D;
     }
     
     .lineBox {
@@ -222,7 +222,7 @@
         height: 50px;
         position: absolute;
         bottom: 0;
-        background-image: url(https://i.imgur.com/v7CxTqu.png);
+        /* background-image: url(https://i.imgur.com/uElOuOS.png); */
         background-repeat: no-repeat;
         background-position: center center;
         -moz-background-size: cover;
@@ -305,7 +305,7 @@
         text-align: center;
         letter-spacing: 2px;
         font-weight: 500;
-        color: #F2B48F;
+        color: #FCA311;
         font-size: 20px;
     }
     
@@ -319,7 +319,7 @@
     
     .line02 {
         width: 80px;
-        border-bottom: 2px solid #F2B48F;
+        border-bottom: 2px solid #FCA311;
     }
     
     .box_img06 {
@@ -460,7 +460,7 @@
     .fz40 {
         font-size: 40px;
         font-weight: 700;
-        color: #F2B48F;
+        color: #FCA311;
     }
     /* This is purely for the demo */
     
@@ -604,7 +604,7 @@
             text-align: center;
             letter-spacing: 2px;
             font-weight: 500;
-            color: #F2B48F;
+            color: #FCA311;
             font-size: 20px;
         }
         .paper p {
@@ -657,7 +657,7 @@
             text-align: center;
             letter-spacing: 2px;
             font-weight: 500;
-            color: #F2B48F;
+            color: #FCA311;
             font-size: 20px;
         }
         .paper p {
