@@ -252,7 +252,8 @@
     }
     
     .img01 {
-        background-image: url(https://images.unsplash.com/photo-1502487901474-c6c3cc90521d?auto=format&fit=crop&w=1031&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D);
+        /* background-image: url(https://images.unsplash.com/photo-1502487901474-c6c3cc90521d?auto=format&fit=crop&w=1031&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D); */
+        background-image: url(https://i.imgur.com/7es8qxR.png);
         height: 500px;
         background-repeat: no-repeat;
         background-position: center center;
