@@ -424,7 +424,49 @@
             </div>
         </div>
     </section>
-    <!-- <section id="about" class="section mainColor">3</section> -->
+    <section id="about" class="section fourthColor d-flex flex-column justify-content-center ">
+        <div class="up  d-flex justify-content-center align-items-center">
+            <div class="imgBox">
+                <img src="https://i.imgur.com/sqmGNYi.png" alt="" id="img5">
+            </div>
+        </div>
+        <div class="down">
+            <div class="web">
+                <img src="https://i.imgur.com/dspTFXE.png" alt="" class="p1" id="img1">
+                <img src="./img/intro/Web1.png" alt="" class="p111">
+                <img src="./img/intro/Web2.png" alt="" class="p111 p112">
+                <img src="./img/intro/Web3.png" alt="" class="p111 p113">
+                <img src="./img/intro/Web4.png" alt="" class="p111 p114">
+                <img src="./img/intro/Web5.png" alt="" class="p111 p115">
+                <img src="./img/intro/Web6.png" alt="" class="p111 p116">
+            </div>
+            <div class="pm">
+                <img src="https://i.imgur.com/3air8GW.png" alt="" class="p1" id="img2">
+                <img src="./img/intro/Pm1.png" alt="" class="p121">
+                <img src="./img/intro/Pm2.png" alt="" class="p121 p122">
+                <img src="./img/intro/Pm3.png" alt="" class="p121 p123">
+                <img src="./img/intro/Pm4.png" alt="" class="p121 p124">
+            </div>
+            <div class="art">
+                <img src="https://i.imgur.com/n0ORUcw.png" alt="" class="p1" id="img3">
+                <img src="./img/intro/Art1.png" alt="" class="p131">
+                <img src="./img/intro/Art2.png" alt="" class="p131 p132">
+                <img src="./img/intro/Art3.png" alt="" class="p131 p133">
+                <img src="./img/intro/Art4.png" alt="" class="p131 p134">
+                <img src="./img/intro/Art5.png" alt="" class="p131 p135">
+                <img src="./img/intro/Art6.png" alt="" class="p131 p136">
+            </div>
+            <div class="an">
+                <img src="https://i.imgur.com/eDZVA0q.png" alt="" class="p1" id="img4">
+                <img src="./img/intro/An1.png" alt="" class="p141">
+                <img src="./img/intro/An2.png" alt="" class="p141 p142">
+                <img src="./img/intro/An3.png" alt="" class="p141 p143">
+                <img src="./img/intro/An4.png" alt="" class="p141 p144">
+                <img src="./img/intro/An5.png" alt="" class="p141 p145">
+                <img src="./img/intro/An6.png" alt="" class="p141 p146">
+            </div>
+        </div>
+    </section>
 
 
 
@@ -708,6 +750,214 @@
         Page.init();
     </script>
     <script>
+        var img1 = document.getElementById('img1');
+        var img2 = document.getElementById('img2');
+        var img3 = document.getElementById('img3');
+        var img4 = document.getElementById('img4');
+        var img5 = document.getElementById('img5');
+        var aboutSec = document.getElementById('about');
+
+        var p111 = document.getElementsByClassName("p111");
+        var p121 = document.getElementsByClassName("p121");
+        var p131 = document.getElementsByClassName("p131");
+        var p141 = document.getElementsByClassName("p141");
+
+
+
+        img1.onmouseover = function() {
+            p111[0].style.visibility = 'visible';
+            p111[1].style.visibility = 'visible';
+            p111[2].style.visibility = 'visible';
+            p111[3].style.visibility = 'visible';
+            p111[4].style.visibility = 'visible';
+            p111[5].style.visibility = 'visible';
+            img2.style.filter = 'grayscale(100%)';
+            img3.style.filter = 'grayscale(100%)';
+            img4.style.filter = 'grayscale(100%)';
+            img5.style.filter = 'grayscale(100%)';
+            aboutSec.style.backgroundColor = '#666';
+        };
+
+        p111[0].onmouseover = img1.onmouseover;
+        p111[1].onmouseover = img1.onmouseover;
+        p111[2].onmouseover = img1.onmouseover;
+        p111[3].onmouseover = img1.onmouseover;
+        p111[4].onmouseover = img1.onmouseover;
+        p111[5].onmouseover = img1.onmouseover;
+
+        img1.onmouseout = function() {
+            p111[0].style.visibility = 'hidden';
+            p111[1].style.visibility = 'hidden';
+            p111[2].style.visibility = 'hidden';
+            p111[3].style.visibility = 'hidden';
+            p111[4].style.visibility = 'hidden';
+            p111[5].style.visibility = 'hidden';
+            img2.style.filter = 'grayscale(0%)';
+            img3.style.filter = 'grayscale(0%)';
+            img4.style.filter = 'grayscale(0%)';
+            img5.style.filter = 'grayscale(0%)';
+            aboutSec.style.backgroundColor = '#F1E398';
+        };
+
+        p111[0].onmouseout = img1.onmouseout;
+        p111[1].onmouseout = img1.onmouseout;
+        p111[2].onmouseout = img1.onmouseout;
+        p111[3].onmouseout = img1.onmouseout;
+        p111[4].onmouseout = img1.onmouseout;
+        p111[5].onmouseout = img1.onmouseout;
+
+
+        img2.onmouseover = function() {
+            p121[0].style.visibility = 'visible';
+            p121[1].style.visibility = 'visible';
+            p121[2].style.visibility = 'visible';
+            p121[3].style.visibility = 'visible';
+            img1.style.filter = 'grayscale(100%)';
+            img3.style.filter = 'grayscale(100%)';
+            img4.style.filter = 'grayscale(100%)';
+            img5.style.filter = 'grayscale(100%)';
+            aboutSec.style.backgroundColor = '#666';
+        };
+
+        p121[0].onmouseover = img2.onmouseover;
+        p121[1].onmouseover = img2.onmouseover;
+        p121[2].onmouseover = img2.onmouseover;
+        p121[3].onmouseover = img2.onmouseover;
+
+        img2.onmouseout = function() {
+            p121[0].style.visibility = 'hidden';
+            p121[1].style.visibility = 'hidden';
+            p121[2].style.visibility = 'hidden';
+            p121[3].style.visibility = 'hidden';
+            img1.style.filter = 'grayscale(0%)';
+            img3.style.filter = 'grayscale(0%)';
+            img4.style.filter = 'grayscale(0%)';
+            img5.style.filter = 'grayscale(0%)';
+            aboutSec.style.backgroundColor = '#F1E398';
+        };
+
+        p121[0].onmouseout = img2.onmouseout;
+        p121[1].onmouseout = img2.onmouseout;
+        p121[2].onmouseout = img2.onmouseout;
+        p121[3].onmouseout = img2.onmouseout;
+
+        img3.onmouseover = function() {
+            p131[0].style.visibility = 'visible';
+            p131[1].style.visibility = 'visible';
+            p131[2].style.visibility = 'visible';
+            p131[3].style.visibility = 'visible';
+            p131[4].style.visibility = 'visible';
+            p131[5].style.visibility = 'visible';
+            img2.style.filter = 'grayscale(100%)';
+            img1.style.filter = 'grayscale(100%)';
+            img4.style.filter = 'grayscale(100%)';
+            img5.style.filter = 'grayscale(100%)';
+            aboutSec.style.backgroundColor = '#666';
+        };
+
+        p131[0].onmouseover = img3.onmouseover;
+        p131[1].onmouseover = img3.onmouseover;
+        p131[2].onmouseover = img3.onmouseover;
+        p131[3].onmouseover = img3.onmouseover;
+        p131[4].onmouseover = img3.onmouseover;
+        p131[5].onmouseover = img3.onmouseover;
+
+
+        img3.onmouseout = function() {
+            p131[0].style.visibility = 'hidden';
+            p131[1].style.visibility = 'hidden';
+            p131[2].style.visibility = 'hidden';
+            p131[3].style.visibility = 'hidden';
+            p131[4].style.visibility = 'hidden';
+            p131[5].style.visibility = 'hidden';
+            img2.style.filter = 'grayscale(0%)';
+            img1.style.filter = 'grayscale(0%)';
+            img4.style.filter = 'grayscale(0%)';
+            img5.style.filter = 'grayscale(0%)';
+            aboutSec.style.backgroundColor = '#F1E398';
+        };
+
+        p131[0].onmouseout = img3.onmouseout;
+        p131[1].onmouseout = img3.onmouseout;
+        p131[2].onmouseout = img3.onmouseout;
+        p131[3].onmouseout = img3.onmouseout;
+        p131[4].onmouseout = img3.onmouseout;
+        p131[5].onmouseout = img3.onmouseout;
+
+
+        img4.onmouseover = function() {
+            p141[0].style.visibility = 'visible';
+            p141[1].style.visibility = 'visible';
+            p141[2].style.visibility = 'visible';
+            p141[3].style.visibility = 'visible';
+            p141[4].style.visibility = 'visible';
+            p141[5].style.visibility = 'visible';
+            img2.style.filter = 'grayscale(100%)';
+            img3.style.filter = 'grayscale(100%)';
+            img1.style.filter = 'grayscale(100%)';
+            img5.style.filter = 'grayscale(100%)';
+            aboutSec.style.backgroundColor = '#666';
+        };
+
+        p141[0].onmouseover = img4.onmouseover;
+        p141[1].onmouseover = img4.onmouseover;
+        p141[2].onmouseover = img4.onmouseover;
+        p141[3].onmouseover = img4.onmouseover;
+        p141[4].onmouseover = img4.onmouseover;
+        p141[5].onmouseover = img4.onmouseover;
+
+        img4.onmouseout = function() {
+            p141[0].style.visibility = 'hidden';
+            p141[1].style.visibility = 'hidden';
+            p141[2].style.visibility = 'hidden';
+            p141[3].style.visibility = 'hidden';
+            p141[4].style.visibility = 'hidden';
+            p141[5].style.visibility = 'hidden';
+            img2.style.filter = 'grayscale(0%)';
+            img3.style.filter = 'grayscale(0%)';
+            img1.style.filter = 'grayscale(0%)';
+            img5.style.filter = 'grayscale(0%)';
+            aboutSec.style.backgroundColor = '#F1E398';
+        };
+
+        p141[0].onmouseout = img4.onmouseout;
+        p141[1].onmouseout = img4.onmouseout;
+        p141[2].onmouseout = img4.onmouseout;
+        p141[3].onmouseout = img4.onmouseout;
+        p141[4].onmouseout = img4.onmouseout;
+        p141[5].onmouseout = img4.onmouseout;
+
+
+
+        // img2.onmouseout = function() {
+        //     this.style.height = '40vh';
+        //     this.src = 'https://i.imgur.com/3air8GW.png';
+        // };
+
+        // img2.onmouseover = function() {
+        //     this.style.height = '60vh';
+        //     this.src = 'https://i.imgur.com/wpoF1Jn.png';
+        // };
+        // img3.onmouseout = function() {
+        //     this.style.height = '40vh';
+        //     this.src = 'https://i.imgur.com/n0ORUcw.png';
+        // };
+
+        // img3.onmouseover = function() {
+        //     this.style.height = '60vh';
+        //     this.src = 'https://i.imgur.com/HTz60Kg.png';
+        // };
+
+        // img4.onmouseout = function() {
+        //     this.style.height = '40vh';
+        //     this.src = 'https://i.imgur.com/eDZVA0q.png';
+        // };
+
+        // img4.onmouseover = function() {
+        //     this.style.height = '60vh';
+        //     this.src = 'https://i.imgur.com/lbeZoDE.png';
+        // };
+
         $(function() {
 
 

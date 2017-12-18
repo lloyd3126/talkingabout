@@ -40,11 +40,11 @@
     }
     
     .fourthColor {
-        background-color: #FCA311;
+        background-color: #F1E398;
     }
     
     .fourthColorW {
-        color: #FCA311;
+        color: #F1E398;
     }
     
     .fiveColor {
@@ -458,7 +458,6 @@
         height: auto;
     }
     
-
     .fz40 {
         font-size: 40px;
         font-weight: 700;
@@ -490,10 +489,203 @@
         width: 100%;
         height: 100px;
     }
-
+    
     .space2 {
         width: 100%;
         height: auto;
+    }
+    
+    .up {
+        height: 50vh;
+    }
+    
+    .up img {
+        width: 40vw;
+    }
+    
+    .down {
+        height: 50vh;
+        position: relative;
+        width: 100%;
+        max-width: 1400px;
+        float: left;
+        margin: 0 auto;
+    }
+    
+    .web,
+    .pm,
+    .art,
+    .an {
+        position: absolute;
+        bottom: 0;
+    }
+    
+    .web {
+        left: 16%;
+        z-index: 11;
+    }
+    
+    .pm {
+        left: 33%;
+        z-index: 12;
+    }
+    
+    .art {
+        right: 34%;
+        z-index: 14;
+    }
+    
+    .an {
+        right: 16%;
+        z-index: 13;
+    }
+    
+    .p1 {
+        height: 308px;
+        cursor: pointer;
+    }
+    
+    .p111 {
+        height: 94px;
+        z-index: 20;
+        position: absolute;
+        top: -150px;
+        visibility: hidden;
+    }
+    
+    .p112 {
+        height: 62px;
+        top: -40px;
+        right: 30px;
+    }
+    
+    .p113 {
+        height: 76px;
+        top: 50px;
+        right: 150px;
+    }
+    
+    .p114 {
+        height: 46px;
+        top: 185px;
+        right: 35px;
+    }
+    
+    .p115 {
+        height: 15px;
+        top: 230px;
+        right: 75px;
+    }
+    
+    .p116 {
+        height: 15px;
+        top: 285px;
+        right: 83px;
+    }
+    
+    .p121 {
+        height: 94px;
+        z-index: 20;
+        position: absolute;
+        top: -150px;
+        right: 0;
+        visibility: hidden;
+    }
+    
+    .p122 {
+        height: 62px;
+        top: -50px;
+        right: 50px;
+    }
+    
+    .p123 {
+        height: 45px;
+        top: 30px;
+        right: 20px;
+    }
+    
+    .p124 {
+        height: 45px;
+        top: 180px;
+        right: 75px;
+    }
+    
+    .p131 {
+        height: 94px;
+        z-index: 20;
+        position: absolute;
+        top: -150px;
+        left: 0;
+        visibility: hidden;
+    }
+    
+    .p132 {
+        height: 62px;
+        top: -50px;
+        left: 140px;
+    }
+    
+    .p133 {
+        height: 25px;
+        top: 20px;
+        left: 10px;
+    }
+    
+    .p134 {
+        height: 25px;
+        top: 60px;
+        left: 25px;
+    }
+    
+    .p135 {
+        height: 30px;
+        top: 90px;
+        left: 55px;
+    }
+    
+    .p136 {
+        height: 30px;
+        top: 90px;
+        left: 125px;
+    }
+    
+    .p141 {
+        height: 94px;
+        z-index: 20;
+        position: absolute;
+        top: -100px;
+        right: 0;
+        visibility: hidden;
+    }
+    
+    .p142 {
+        height: 62px;
+        top: 0;
+        left: 140px;
+    }
+    
+    .p143 {
+        height: 30px;
+        top: 37px;
+        left: 0;
+    }
+    
+    .p144 {
+        height: 30px;
+        top: 7px;
+        left: 70px;
+    }
+    
+    .p145 {
+        height: 30px;
+        top: 130px;
+        left: 35px;
+    }
+    
+    .p146 {
+        height: 30px;
+        top: 110px;
+        left: 115px;
     }
     
     @media (max-width: 575px) {
