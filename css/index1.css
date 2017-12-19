@@ -722,6 +722,21 @@
         line-height: 55px;
     }
     
+    .fixedBox1 {
+        background-color: #FCA311;
+        width: 30px;
+        height: 30px;
+        line-height: 25px;
+        font-size: 18px;
+        color: #ffffff;
+    }
+    
+    .fixedBox1:hover {
+        width: 40px;
+        height: 40px;
+        line-height: 35px;
+    }
+    
     @media (max-width: 575px) {
         .navbar a {
             font-size: 12px;

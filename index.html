@@ -115,8 +115,27 @@
 <body class="mainColor">
 
     <div class="fixed-bottom d-flex justify-content-end">
-        <div class="fixedBox" id="back">
-            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        <div class="d-flex flex-column align-items-center">
+            <a href="#content">
+
+                <div class="fixedBox fixedBox1 mt-2" id="backArt">
+                    <i class="fa fa-paint-brush" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="#Animation">
+
+                <div class="fixedBox fixedBox1 mt-2" id="backAn">
+                    <i class="fa fa-video-camera" aria-hidden="true"></i>
+                </div>
+            </a>
+            <a href="#Infographic">
+                <div class="fixedBox fixedBox1 mt-2" id="backPm">
+                    <i class="fa fa-bookmark" aria-hidden="true"></i>
+                </div>
+            </a>
+            <div class="fixedBox mt-3" id="back">
+                <i class="fa fa-chevron-up" aria-hidden="true"></i>
+            </div>
         </div>
     </div>
 
@@ -434,7 +453,8 @@
                     </div>
                 </div>
             </div>
-            <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-video-camera mr-3" aria-hidden="true"></i>動畫集 Animation </p>
+            <section id="Animation" class="space"></section>
+            <p class="col-12 m-0 text-left mt-5 fz40 inlin" id=""><i class="fa fa-video-camera mr-3" aria-hidden="true"></i>動畫集 Animation </p>
             <div class="d-flex mainColor space2 justify-content-center" style="padding: 15px;">
                 <div class="mainColor">
                     <img src="https://i.imgur.com/zk034we.png" alt="" style="width: 100%; height: auto;">
@@ -487,7 +507,8 @@
                     </div>
                 </div>
             </div>
-            <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-bookmark mr-3" aria-hidden="true"></i>懶人包 Infographic </p>
+            <section id="Infographic" class="space"></section>
+            <p class="col-12 m-0 text-left mt-5 fz40 inlin" id=""><i class="fa fa-bookmark mr-3" aria-hidden="true"></i>懶人包 Infographic </p>
             <div class="card-deck">
                 <div class="card">
                     <!-- QQ -->
@@ -1177,7 +1198,7 @@
                     "color": "#14213D",
                 });
                 $('window').animate({
-                    scrollTop: $('#header').position().top
+                    scrollTop: $('#header').offset().top
                 }, 800);
 
             });
@@ -1188,11 +1209,10 @@
                     "color": "#14213D",
                 });
                 $('html,body').animate({
-                    scrollTop: $('#header').position().top
+                    scrollTop: $('#header').offset().top
                 }, 800);
 
             });
-
 
             $('#btn_objective').click(function() {
                 $('.line').removeClass("m01 m02 m03");
@@ -1200,7 +1220,7 @@
                     "color": "#14213D",
                 });
                 $('window').animate({
-                    scrollTop: $('#objective').position().top
+                    scrollTop: $('#objective').offset().top
                 }, 800);
                 $(this).css({
                     "color": "#FCA311",
@@ -1215,7 +1235,7 @@
                     "color": "#14213D",
                 });
                 $('window').animate({
-                    scrollTop: $('#content').position().top
+                    scrollTop: $('#content').offset().top
                 }, 800);
                 $(this).css({
                     "color": "#FCA311",
