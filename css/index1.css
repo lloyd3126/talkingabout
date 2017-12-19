@@ -115,6 +115,8 @@
         overflow-y: scroll;
         overflow-x: hidden;
         -webkit-overflow-scrolling: touch;
+        position: relative;
+        /* overflow: hidden; */
     }
     
     .navbar {
@@ -703,6 +705,23 @@
         left: 115px;
     }
     
+    .fixedBox {
+        background-color: #ffffff;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        text-align: center;
+        line-height: 45px;
+        font-size: 25px;
+        cursor: pointer;
+    }
+    
+    .fixedBox:hover {
+        width: 60px;
+        height: 60px;
+        line-height: 55px;
+    }
+    
     @media (max-width: 575px) {
         .navbar a {
             font-size: 12px;
@@ -1155,6 +1174,10 @@
         }
         .an {
             right: 8%;
+        }
+        .card {
+            min-width: 20%;
+            margin-top: 15px;
         }
     }
     /* Extra large devices (large desktops, 1200px and up) */

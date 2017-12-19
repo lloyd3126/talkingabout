@@ -24,7 +24,7 @@
     <link rel="stylesheet" type="text/css" href="css/bookblock.css" />
     <link rel="stylesheet" type="text/css" href="css/demo1.css" />
     <link rel="stylesheet" type="text/css" href="https://cdn.plyr.io/2.0.7/plyr.css" />
-
+    <!-- <link rel="apple-touch-startup-image" href="/startup.png"> -->
     <!-- ekko-lightbox -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 
@@ -55,6 +55,13 @@
         
         .card-deck {
             padding: 0px 15px 15px;
+            margin-top: 0px;
+            flex-flow: row wrap;
+        }
+        
+        .card {
+            min-width: 20%;
+            margin-top: 15px;
         }
         
         .card-body {
@@ -70,10 +77,22 @@
         .card-footer {
             padding-top: 0px;
             border: 0;
+            background-color: rgba(0, 0, 0, 0);
         }
         
         .card-img-top {
             border: 8px solid #5C4D83;
+        }
+        
+        .fixed-bottom {
+            padding: 10px 30px;
+        }
+        
+        @media (min-width: 576px) and (max-width: 991px) {
+            .card {
+                min-width: 40%;
+                margin-top: 15px;
+            }
         }
         
         @media (max-width: 575px) {
@@ -94,6 +113,12 @@
 </head>
 
 <body class="mainColor">
+
+    <div class="fixed-bottom d-flex justify-content-end">
+        <div class="fixedBox" id="back">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </div>
+    </div>
 
     <div class="navbar m-0 fixed-top p-0 py-lg-3 secondColor" style="top: 20px; left: 50%; transform: translateX(-50%);">
         <div class="container d-flex">
@@ -117,6 +142,7 @@
 
         </div>
     </div>
+
     <header id="header" class="d-flex justify-content-center align-items-center">
         <div class=" d-flex flex-column align-items-center">
             <img src="https://i.imgur.com/dy1ORmB.png" alt="" class="col-8 col-sm-4">
@@ -462,32 +488,41 @@
                 </div>
             </div>
             <p class="col-12 m-0 text-left mt-5 fz40 inlin"><i class="fa fa-bookmark mr-3" aria-hidden="true"></i>懶人包 Infographic </p>
-            <div class="card-deck mt-3">
+            <div class="card-deck">
                 <div class="card">
                     <img class="card-img-top" src="https://i.imgur.com/hs5hUYH.png" alt="Card image cap">
                     <div class="card-body">
-                        <h4 class="card-title">邊緣人篇</h4>
+                        <h4 class="card-title">表情符號篇</h4>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">共 4 頁</small>
+                        <small class="text-muted">共 2 包</small>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" src="https://i.imgur.com/hs5hUYH.png" alt="Card image cap">
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">注音符號篇</h4>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted">共 2 包</small>
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="..." alt="Card image cap">
+                    <img class="card-img-top" src="https://i.imgur.com/hs5hUYH.png" alt="Card image cap">
                     <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
+                        <h4 class="card-title">組合篇</h4>
                     </div>
                     <div class="card-footer">
-                        <small class="text-muted">Last updated 3 mins ago</small>
+                        <small class="text-muted">共 3 包</small>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img-top" src="https://i.imgur.com/hs5hUYH.png" alt="Card image cap">
+                    <div class="card-body">
+                        <h4 class="card-title">特殊詞囊篇</h4>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">共 23 包</small>
                     </div>
                 </div>
             </div>
@@ -495,7 +530,7 @@
 
         </div>
     </section>
-    <section id="about" class="section fourthColor d-flex flex-column justify-content-center ">
+    <section id="about" class="section fourthColor mt-md-5 mt-2 d-flex flex-column justify-content-center ">
         <div class="up  d-flex justify-content-center align-items-center">
             <div class="imgBox">
                 <img src="https://i.imgur.com/sqmGNYi.png" alt="" id="img5">
@@ -1017,36 +1052,14 @@
         p141[4].onmouseout = img4.onmouseout;
         p141[5].onmouseout = img4.onmouseout;
 
-
-
-        // img2.onmouseout = function() {
-        //     this.style.height = '40vh';
-        //     this.src = 'https://i.imgur.com/3air8GW.png';
-        // };
-
-        // img2.onmouseover = function() {
-        //     this.style.height = '60vh';
-        //     this.src = 'https://i.imgur.com/wpoF1Jn.png';
-        // };
-        // img3.onmouseout = function() {
-        //     this.style.height = '40vh';
-        //     this.src = 'https://i.imgur.com/n0ORUcw.png';
-        // };
-
-        // img3.onmouseover = function() {
-        //     this.style.height = '60vh';
-        //     this.src = 'https://i.imgur.com/HTz60Kg.png';
-        // };
-
-        // img4.onmouseout = function() {
-        //     this.style.height = '40vh';
-        //     this.src = 'https://i.imgur.com/eDZVA0q.png';
-        // };
-
-        // img4.onmouseover = function() {
-        //     this.style.height = '60vh';
-        //     this.src = 'https://i.imgur.com/lbeZoDE.png';
-        // };
+        window.onload = function() {
+            setTimeout(function() {
+                window.scrollTo(0, 1);
+            }, 100);
+        }
+        document.addEventListener("touchmove", function(event) {
+            event.preventDefault();
+        }, false);
 
         $(function() {
 
@@ -1064,14 +1077,24 @@
                 });
             });
 
-
             $('#btn_header').click(function() {
                 $('.line').removeClass("m01 m02 m03");
                 $('.navA').css({
                     "color": "#14213D",
                 });
+                $('window').animate({
+                    scrollTop: $('#header').position().top
+                }, 800);
+
+            });
+
+            $('#back').click(function() {
+                $('.line').removeClass("m01 m02 m03");
+                $('.navA').css({
+                    "color": "#14213D",
+                });
                 $('html,body').animate({
-                    scrollTop: $('#header').offset().top
+                    scrollTop: $('#header').position().top
                 }, 800);
 
             });
@@ -1082,8 +1105,8 @@
                 $('.navA').css({
                     "color": "#14213D",
                 });
-                $('html,body').animate({
-                    scrollTop: $('#objective').offset().top
+                $('window').animate({
+                    scrollTop: $('#objective').position().top
                 }, 800);
                 $(this).css({
                     "color": "#FCA311",
@@ -1097,8 +1120,8 @@
                 $('.navA').css({
                     "color": "#14213D",
                 });
-                $('html,body').animate({
-                    scrollTop: $('#content').offset().top
+                $('window').animate({
+                    scrollTop: $('#content').position().top
                 }, 800);
                 $(this).css({
                     "color": "#FCA311",
@@ -1112,8 +1135,8 @@
                 $('.navA').css({
                     "color": "#14213D",
                 });
-                $('html,body').animate({
-                    scrollTop: $('#about').offset().top
+                $('window').animate({
+                    scrollTop: $('#about').position().top
                 }, 800);
                 $(this).css({
                     "color": "#FCA311",
