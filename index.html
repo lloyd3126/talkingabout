@@ -119,19 +119,19 @@
 
     <div class="fixed-bottom d-flex justify-content-end">
         <div class="d-flex flex-column align-items-center">
-            <a href="#content">
+            <a href="#">
 
                 <div class="fixedBox fixedBox1 mt-2" id="backArt">
                     <i class="fa fa-paint-brush" aria-hidden="true"></i>
                 </div>
             </a>
-            <a href="#Animation">
+            <a href="#">
 
                 <div class="fixedBox fixedBox1 mt-2" id="backAn">
                     <i class="fa fa-video-camera" aria-hidden="true"></i>
                 </div>
             </a>
-            <a href="#Infographic">
+            <a href="#">
                 <div class="fixedBox fixedBox1 mt-2" id="backPm">
                     <i class="fa fa-bookmark" aria-hidden="true"></i>
                 </div>
@@ -145,7 +145,7 @@
     <div class="navbar m-0 fixed-top p-0 py-lg-3 secondColor" style="top: 20px; left: 50%; transform: translateX(-50%);">
         <div class="container d-flex">
             <div class="cursor col-12 col-lg-4 logo d-flex greenW font-weight-normal justify-content-lg-start justify-content-center align-items-center">
-                <a id="btn_header" href="#header" class="logo">
+                <a id="btn_header" href="#" class="logo">
                     <img src="https://i.imgur.com/NnKoPbE.png" alt="" class=" d-none d-lg-flex">
                     <img src="https://i.imgur.com/NnKoPbE.png" alt="" class=" d-lg-none d-flex my-2">
                 </a>
@@ -153,9 +153,9 @@
             </div>
             <div class="col-12 col-lg-8 d-flex flex-column justify-content-center justify-content-lg-end align-items-center align-items-lg-end p-0 navWord mt-2 m-lg-0 pb-1 pb-lg-0">
                 <div>
-                    <a id="btn_objective" href="#objective" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-rocket mr-1" aria-hidden="true"></i>專題目標</a>
-                    <a id="btn_content" href="#content" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-file mr-1" aria-hidden="true"></i>作品內容</a>
-                    <a id="btn_about" href="#about" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-address-card-o mr-1" aria-hidden="true"></i>關於我們</a>
+                    <a id="btn_objective" href="#" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-rocket mr-1" aria-hidden="true"></i>專題目標</a>
+                    <a id="btn_content" href="#" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-file mr-1" aria-hidden="true"></i>作品內容</a>
+                    <a id="btn_about" href="#" class="navA d-inline-block mx-2 mx-lg-3 mainColorW font-weight-normal letter-spacing-2"><i class="d-none d-sm-inline-block fa fa-address-card-o mr-1" aria-hidden="true"></i>關於我們</a>
                 </div>
                 <div class="lineBox">
                     <div class="line d-none d-lg-block"></div>
@@ -512,7 +512,7 @@
             </div>
             <section id="Infographic" class="space"></section>
             <p class="col-12 m-0 text-left mt-5 fz40 inlin" id=""><i class="fa fa-bookmark mr-3" aria-hidden="true"></i>懶人包 Infographic </p>
-            <div class="card-deck">
+            <div class="card-deck mb-5">
                 <div class="card">
                     <!-- QQ -->
                     <a href="https://i.imgur.com/wL4SkGT.png" data-toggle="lightbox" data-gallery="Infographic">
@@ -648,7 +648,7 @@
 
         </div>
     </section>
-    <section id="about" class="section fourthColor mt-md-5 mt-2 d-flex flex-column justify-content-center ">
+    <section id="about" class="section fourthColor d-flex flex-column justify-content-center ">
         <div class="up  d-flex justify-content-center align-items-center">
             <div class="imgBox">
                 <img src="https://i.imgur.com/sqmGNYi.png" alt="" id="img5">
@@ -1170,14 +1170,14 @@
         p141[4].onmouseout = img4.onmouseout;
         p141[5].onmouseout = img4.onmouseout;
 
-        window.onload = function() {
-                setTimeout(function() {
-                    window.scrollTo(0, 1);
-                }, 100);
-            }
-            // document.addEventListener("touchmove", function(event) {
-            //     event.preventDefault();
-            // }, false);
+        // window.onload = function() {
+        //         setTimeout(function() {
+        //             window.scrollTo(0, 1);
+        //         }, 100);
+        //     }
+        // document.addEventListener("touchmove", function(event) {
+        //     event.preventDefault();
+        // }, false);
 
         $(function() {
 
@@ -1195,16 +1195,19 @@
                 });
             });
 
+            var to_header = $('#header').offset().top
+
             $('#btn_header').click(function() {
                 $('.line').removeClass("m01 m02 m03");
                 $('.navA').css({
                     "color": "#14213D",
                 });
-                $('window').animate({
-                    scrollTop: $('#header').offset().top
+                $('html,body').animate({
+                    scrollTop: to_header
                 }, 800);
 
             });
+
 
             $('#back').click(function() {
                 $('.line').removeClass("m01 m02 m03");
@@ -1212,18 +1215,61 @@
                     "color": "#14213D",
                 });
                 $('html,body').animate({
-                    scrollTop: $('#header').offset().top
+                    scrollTop: to_header
                 }, 800);
 
             });
+
+            var to_content = $('#content').offset().top
+
+            $('#backArt').click(function() {
+                // console.log($('#content').offset().top);
+                $('.line').removeClass("m01 m02 m03");
+                $('.navA').css({
+                    "color": "#14213D",
+                });
+                $('html,body').animate({
+                    scrollTop: to_content
+                }, 800);
+                $('.line').addClass("m02");
+            });
+
+
+            var to_Animation = $('#Animation').offset().top
+
+            $('#backAn').click(function() {
+                $('.line').removeClass("m01 m02 m03");
+                $('.navA').css({
+                    "color": "#14213D",
+                });
+                $('html,body').animate({
+                    scrollTop: to_Animation
+                }, 800);
+                $('.line').addClass("m02");
+            });
+
+            var to_Infographic = $('#Infographic').offset().top
+
+            $('#backPm').click(function() {
+                $('.line').removeClass("m01 m02 m03");
+                $('.navA').css({
+                    "color": "#14213D",
+                });
+                $('html,body').animate({
+                    scrollTop: to_Infographic
+                }, 800);
+                $('.line').addClass("m02");
+            });
+
+            var to_objective = $('#objective').offset().top
 
             $('#btn_objective').click(function() {
                 $('.line').removeClass("m01 m02 m03");
                 $('.navA').css({
                     "color": "#14213D",
                 });
-                $('window').animate({
-                    scrollTop: $('#objective').offset().top
+                $('html,body').animate({
+                    scrollTop: to_objective
                 }, 800);
                 $(this).css({
                     "color": "#FCA311",
@@ -1232,13 +1278,14 @@
                 $('.line').addClass("m01");
 
             });
+
             $('#btn_content').click(function() {
                 $('.line').removeClass("m01 m02 m03");
                 $('.navA').css({
                     "color": "#14213D",
                 });
-                $('window').animate({
-                    scrollTop: $('#content').offset().top
+                $('html,body').animate({
+                    scrollTop: to_content
                 }, 800);
                 $(this).css({
                     "color": "#FCA311",
@@ -1247,13 +1294,16 @@
                 $('.line').addClass("m02");
 
             });
+
+            var to_about = $('#about').position().top
+
             $('#btn_about').click(function() {
                 $('.line').removeClass("m01 m02 m03");
                 $('.navA').css({
                     "color": "#14213D",
                 });
-                $('window').animate({
-                    scrollTop: $('#about').position().top
+                $('html,body').animate({
+                    scrollTop: to_about
                 }, 800);
                 $(this).css({
                     "color": "#FCA311",
