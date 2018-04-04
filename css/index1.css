@@ -118,6 +118,15 @@
         position: relative;
         /* overflow: hidden; */
     }
+
+    .jumpNav {
+        display: inline-block;
+        position: fixed;
+        bottom: 1rem;
+        right:1rem;
+        z-index: 1000;
+    }
+
     
     .navbar {
         width: 80%;
@@ -1221,5 +1230,8 @@
             height: auto;
             box-shadow: 0 12px 20px -10px rgba(81, 64, 49, 0.6);
             background-color: #fff;
+        }
+        .jumpNav {
+            right: 2rem;
         }
     }
